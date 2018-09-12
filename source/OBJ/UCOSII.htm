@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\UCOSII.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\UCOSII.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Sep 12 22:49:40 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Sep 12 23:02:53 2018
 <BR><P>
 <H3>Maximum Stack Usage =        280 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -328,7 +328,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
 </UL>
-<P><STRONG><a name="[8a]"></a>main_task</STRONG> (Thumb, 164 bytes, Stack size 16 bytes, main.o(.text))
+<P><STRONG><a name="[8a]"></a>main_task</STRONG> (Thumb, 184 bytes, Stack size 16 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280 + Unknown Stack Size
 <LI>Call Chain = main_task &rArr; TP_Adjust &rArr; TP_Adj_Info_Show &rArr; LCD_ShowNum &rArr; LCD_ShowChar &rArr; LCD_Fast_DrawPoint &rArr; LCD_WR_DATA
 </UL>
@@ -375,7 +375,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
 </UL>
 
-<P><STRONG><a name="[94]"></a>touch_task</STRONG> (Thumb, 312 bytes, Stack size 16 bytes, main.o(.text))
+<P><STRONG><a name="[94]"></a>touch_task</STRONG> (Thumb, 316 bytes, Stack size 16 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
 <LI>Call Chain = touch_task &rArr; lcd_draw_bline &rArr; gui_fill_circle &rArr; gui_draw_hline &rArr; LCD_Fill &rArr;  LCD_Fill (Cycle)
 </UL>

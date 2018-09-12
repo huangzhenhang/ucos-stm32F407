@@ -272,6 +272,7 @@ void main_task(void *pdata)
 		{
 			case 1://控制DS1
 				LED1=!LED1;
+				LCD_Fill(0,121,lcddev.width,lcddev.height,WHITE);
 				break;
 			case 2://发送信号量
 //				semmask=1;
