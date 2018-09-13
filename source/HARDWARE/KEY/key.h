@@ -21,6 +21,7 @@
 #define WK_UP 	GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)	//PA0
 
 
+
 /*下面方式是通过位带操作方式读取IO*/
 /*
 #define KEY0 		PEin(4)   	//PE4

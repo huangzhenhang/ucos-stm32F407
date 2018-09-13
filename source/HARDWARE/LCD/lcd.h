@@ -2,6 +2,12 @@
 #define __LCD_H		
 #include "sys.h"	 
 #include "stdlib.h" 
+#include "sram.h"   
+#include "piclib.h"	
+#include "string.h"	
+#include "math.h"	
+#include "text.h"	
+#include "ff.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板
@@ -151,7 +157,11 @@ typedef struct
 
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
-	    															  
+	
+void LCD_ShowHomePic(void);
+void LCD_ShowPlayerPic(void);
+u16 pic_get_tnum(u8 *path);//图像显示
+
 void LCD_Init(void);													   	//初始化
 void LCD_DisplayOn(void);													//开显示
 void LCD_DisplayOff(void);													//关显示
