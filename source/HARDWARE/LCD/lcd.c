@@ -2,7 +2,8 @@
 #include "stdlib.h"
 #include "font.h" 
 #include "usart.h"	 
-#include "delay.h"	 
+#include "delay.h"	
+
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板
@@ -332,7 +333,7 @@ void LCD_WR_REG(vu16 regval)
 //写LCD数据
 //data:要写入的值
 void LCD_WR_DATA(vu16 data)
-{	  
+{	 
 	data=data;			//使用-O2优化的时候,必须插入的延时
 	LCD->LCD_RAM=data;		 
 }
@@ -343,7 +344,7 @@ u16 LCD_RD_DATA(void)
 	vu16 ram;			//防止被优化
 	ram=LCD->LCD_RAM;	
 	return ram;	 
-}					      
+}					   
 //写寄存器
 //LCD_Reg:寄存器地址
 //LCD_RegValue:要写入的数据

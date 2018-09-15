@@ -15,6 +15,7 @@
 #include "exfuns.h"
 #include "text.h"
 #include "touch.h" 
+#include "ucos_ii.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板
@@ -146,6 +147,7 @@ void video_play(void)
 	u16 *vindextbl;		//视频文件索引表 
 	
 	
+	
  	while(f_opendir(&vdir,"0:/VIDEO"))//打开视频文件夹
  	{	    
 		Show_Str(60,190,240,16,"VIDEO文件夹错误!",16,0);
@@ -210,11 +212,11 @@ void video_play(void)
 		{
 			key=0;
 			break;
-		}else if(key==KEY2_PRES_V)		//上一曲
+		}else if(key==KEY2_PRES)		//上一曲
 		{
 			if(curindex)curindex--;
 			else curindex=totavinum-1;
- 		}else if(key==KEY1_PRES_V)//下一曲
+ 		}else if(key==KEY0_PRES)//下一曲
 		{
 			curindex++;		   	
 			if(curindex>=totavinum)curindex=0;//到末尾的时候,自动从头开始
@@ -233,6 +235,7 @@ void video_play(void)
 //其他:错误
 u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 {   
+	
 	u8* framebuf;	//视频解码buf	 
 	u8* pbuf;		//buf指针  
 	FIL *favi;
@@ -245,6 +248,9 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 	u8* namebuf;
 //	u16 tstik;
 //	u8 tsres;
+	OS_CPU_SR cpu_sr=0; 
+	//printf("m:%d,%d\r\n",memx,size);
+	OS_ENTER_CRITICAL();		//进入临界区(无法被中断打断)    	  
 	namebuf=mymalloc(SRAMIN,20);//申请100字节内存
 	i2sbuf[0]=mymalloc(SRAMIN,AVI_AUDIO_BUF_SIZE);	//申请音频内存
 	i2sbuf[1]=mymalloc(SRAMIN,AVI_AUDIO_BUF_SIZE);	//申请音频内存
@@ -256,6 +262,7 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 	memset(i2sbuf[1],0,AVI_AUDIO_BUF_SIZE); 
 	memset(i2sbuf[2],0,AVI_AUDIO_BUF_SIZE);
 	memset(i2sbuf[3],0,AVI_AUDIO_BUF_SIZE);
+	memset(framebuf,1,AVI_VIDEO_BUF_SIZE);
 	if(i2sbuf[3]==NULL||framebuf==NULL||favi==NULL)
 	{
 		printf("memory error!\r\n");
@@ -266,21 +273,21 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 		res=f_open(favi,(char *)pname,FA_READ);
 		if(res==0)
 		{
-			pbuf=framebuf;			
-			res=f_read(favi,pbuf,AVI_VIDEO_BUF_SIZE,&nr);//开始读取	
+			pbuf=framebuf;			 	
+			res=f_read(favi,pbuf,61440,&nr);//开始读取	
+			
 			if(res)
 			{
 				printf("fread error:%d\r\n",res);
 				break;
 			} 	 
 			//开始avi解析
-			res=avi_init(pbuf,AVI_VIDEO_BUF_SIZE);	//avi解析
+			res=avi_init(pbuf,AVI_VIDEO_BUF_SIZE);	//avi解析////
 			if(res)
 			{
 				printf("avi err:%d\r\n",res);
 				break;
 			} 	
-			
 			video_info_show(&avix);
 			LCD_ShowPlayerPic();
 			//等待菜单选择界面
@@ -304,14 +311,14 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 								POINT_COLOR=BLUE;
 								Show_Str(135,120,48,20,"下一部",16,1);
 								delay_ms(300);
-								res = KEY1_PRES_V;
+								res = KEY0_PRES;
 								break;
 						}else if(tp_dev.x[0]>=50 &&tp_dev.x[0]<100 && tp_dev.y[0]>140 && tp_dev.y[0]<=190)
 						{
 								POINT_COLOR=BLUE;
 								Show_Str(35,120,48,20,"上一部",16,1);
 								delay_ms(300);
-								res = KEY2_PRES_V;
+								res = KEY2_PRES;
 								break;
 						}else if(tp_dev.x[0]>=50 &&tp_dev.x[0]<100 && tp_dev.y[0]>240 && tp_dev.y[0]<=300)
 						{
@@ -325,7 +332,6 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 			}
 			if(res == 0){
 				TIM6_Int_Init(avix.SecPerFrame/100-1,8400-1);//10Khz计数频率,加1是100us 
-				res=f_read(favi,pbuf,AVI_VIDEO_BUF_SIZE,&nr);//开始读取	
 				offset=avi_srarch_id(pbuf,AVI_VIDEO_BUF_SIZE,"movi");//寻找movi ID	 
 				avi_get_streaminfo(pbuf+offset+4);			//获取流信息 
 				f_lseek(favi,offset+12);					//跳过标志ID,读地址偏移到流数据开始处	 
@@ -445,6 +451,7 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 	myfree(SRAMIN,framebuf);
 	myfree(SRAMIN,favi);
 	myfree(SRAMIN,namebuf);		
+	OS_EXIT_CRITICAL();	
 	return res;
 }
 //avi文件查找

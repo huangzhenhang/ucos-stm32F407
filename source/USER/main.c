@@ -66,7 +66,7 @@ void led_task(void *pdata);
 //设置任务优先级
 #define MAIN_TASK_PRIO       			4 
 //设置任务堆栈大小
-#define MAIN_STK_SIZE  					128
+#define MAIN_STK_SIZE  					256
 //任务堆栈	
 OS_STK MAIN_TASK_STK[MAIN_STK_SIZE];
 //任务函数

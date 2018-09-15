@@ -6,7 +6,7 @@
   * @date    04-August-2014
   * @brief   This file provides firmware functions to manage the following 
   *          functionalities of the Serial peripheral interface (SPI):
-  *           + Initialization and Configuration
+  *           + Initialization and Configurationf
   *           + Data transfers functions
   *           + Hardware CRC Calculation
   *           + DMA transfers management

@@ -77,3 +77,10 @@
 ..\obj\videoplayer.o: ..\HARDWARE\TOUCH\ott2001a.h
 ..\obj\videoplayer.o: ..\HARDWARE\TOUCH\gt9147.h
 ..\obj\videoplayer.o: ..\HARDWARE\TOUCH\ft5206.h
+..\obj\videoplayer.o: ..\UCOSII\CORE\ucos_ii.h
+..\obj\videoplayer.o: ..\UCOSII\CONFIG\includes.h
+..\obj\videoplayer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\videoplayer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\videoplayer.o: ..\UCOSII\CORE\ucos_ii.h
+..\obj\videoplayer.o: ..\UCOSII\PORT\os_cpu.h
+..\obj\videoplayer.o: ..\UCOSII\CONFIG\os_cfg.h

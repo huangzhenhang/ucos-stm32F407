@@ -55,6 +55,8 @@
 ..\obj\fattester.o: ..\TEXT\text.h
 ..\obj\fattester.o: ..\TEXT\fontupd.h
 ..\obj\fattester.o: ..\HARDWARE\SDIO\sdio_sdcard.h
+..\obj\fattester.o: ..\USMART\usmart.h
+..\obj\fattester.o: ..\USMART\usmart_str.h
 ..\obj\fattester.o: ..\SYSTEM\usart\usart.h
 ..\obj\fattester.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\fattester.o: ..\SYSTEM\delay\delay.h

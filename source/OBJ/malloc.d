@@ -35,3 +35,13 @@
 ..\obj\malloc.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\malloc.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\malloc.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
+..\obj\malloc.o: ..\UCOSII\CORE\ucos_ii.h
+..\obj\malloc.o: ..\UCOSII\CONFIG\includes.h
+..\obj\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\malloc.o: ..\UCOSII\CORE\ucos_ii.h
+..\obj\malloc.o: ..\UCOSII\PORT\os_cpu.h
+..\obj\malloc.o: ..\UCOSII\CONFIG\os_cfg.h

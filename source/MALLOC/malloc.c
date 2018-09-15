@@ -1,4 +1,5 @@
-#include "malloc.h"	   
+#include "malloc.h"	  
+#include "ucos_ii.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板
@@ -140,10 +141,14 @@ u8 my_mem_free(u8 memx,u32 offset)
 //ptr:内存首地址 
 void myfree(u8 memx,void *ptr)  
 {  
-	u32 offset;   
+	OS_CPU_SR cpu_sr=0; 
+	u32 offset;  
 	if(ptr==NULL)return;//地址为0.  
- 	offset=(u32)ptr-(u32)mallco_dev.membase[memx];     
-    my_mem_free(memx,offset);	//释放内存      
+ 	//printf("free:%d,%x\r\n",memx,ptr);
+	OS_ENTER_CRITICAL();		//进入临界区(无法被中断打断)     
+ 	offset=(u32)ptr-(u32)mallco_dev.membase[memx];  
+    my_mem_free(memx,offset);	//释放内存     
+	OS_EXIT_CRITICAL();			//退出临界区(可以被中断打断) 
 }  
 //分配内存(外部调用)
 //memx:所属内存块
@@ -151,8 +156,12 @@ void myfree(u8 memx,void *ptr)
 //返回值:分配到的内存首地址.
 void *mymalloc(u8 memx,u32 size)  
 {  
-    u32 offset;   
-	offset=my_mem_malloc(memx,size);  	   	 	   
+	OS_CPU_SR cpu_sr=0; 
+    u32 offset;  
+	//printf("m:%d,%d\r\n",memx,size);
+	OS_ENTER_CRITICAL();		//进入临界区(无法被中断打断)   
+	offset=my_mem_malloc(memx,size);  	   	
+	OS_EXIT_CRITICAL();			//退出临界区(可以被中断打断) 			   
     if(offset==0XFFFFFFFF)return NULL;  
     else return (void*)((u32)mallco_dev.membase[memx]+offset);  
 }  
@@ -163,8 +172,11 @@ void *mymalloc(u8 memx,u32 size)
 //返回值:新分配到的内存首地址.
 void *myrealloc(u8 memx,void *ptr,u32 size)  
 {  
-    u32 offset;    
-    offset=my_mem_malloc(memx,size);   	
+    u32 offset; 
+	OS_CPU_SR cpu_sr=0;  
+	OS_ENTER_CRITICAL();		//进入临界区(无法被中断打断)   
+    offset=my_mem_malloc(memx,size);  
+	OS_EXIT_CRITICAL();			//退出临界区(可以被中断打断) 		
     if(offset==0XFFFFFFFF)return NULL;     
     else  
     {  									   

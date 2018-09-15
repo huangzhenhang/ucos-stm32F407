@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>UCOSII</TargetName>
+      <TargetName>VIDEOPLAYER</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
@@ -47,7 +47,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>..\OBJ\</OutputDirectory>
-          <OutputName>UCOSII</OutputName>
+          <OutputName>VIDEOPLAYER</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -224,7 +224,7 @@
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <RoSelD>3</RoSelD>
@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\FWLIB\inc;..\HARDWARE\TOUCH;..\HARDWARE\BEEP;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,11 +409,6 @@
           <GroupName>USER</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\stm32f4xx_it.c</FilePath>
@@ -422,6 +417,11 @@
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\system_stm32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -444,6 +444,21 @@
               <FilePath>..\HARDWARE\KEY\key.c</FilePath>
             </File>
             <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\SPI\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>w25qxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\W25QXX\w25qxx.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdio_sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\SDIO\sdio_sdcard.c</FilePath>
+            </File>
+            <File>
               <FileName>myiic.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\IIC\myiic.c</FilePath>
@@ -454,9 +469,29 @@
               <FilePath>..\HARDWARE\24CXX\24cxx.c</FilePath>
             </File>
             <File>
+              <FileName>i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\I2S\i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>wm8978.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\WM8978\wm8978.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TIMER\timer.c</FilePath>
+            </File>
+            <File>
               <FileName>ctiic.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\TOUCH\ctiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ft5206.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\TOUCH\ft5206.c</FilePath>
             </File>
             <File>
               <FileName>gt9147.c</FileName>
@@ -467,11 +502,6 @@
               <FileName>ott2001a.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\TOUCH\ott2001a.c</FilePath>
-            </File>
-            <File>
-              <FileName>ft5206.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\TOUCH\ft5206.c</FilePath>
             </File>
             <File>
               <FileName>touch.c</FileName>
@@ -534,14 +564,314 @@
               <FilePath>..\FWLIB\src\stm32f4xx_rcc.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f4xx_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_tim.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_syscfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_syscfg.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_usart.c</FileName>
+              <FileName>stm32f4xx_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_usart.c</FilePath>
+              <FilePath>..\FWLIB\src\stm32f4xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_sdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_sdio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MALLOC</GroupName>
+          <Files>
+            <File>
+              <FileName>malloc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MALLOC\malloc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USMART</GroupName>
+          <Files>
+            <File>
+              <FileName>usmart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart.c</FilePath>
+            </File>
+            <File>
+              <FileName>usmart_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usmart_str.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart_str.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FATFS</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FATFS\src\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FATFS\src\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>exfuns.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FATFS\exfuns\exfuns.c</FilePath>
+            </File>
+            <File>
+              <FileName>fattester.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FATFS\exfuns\fattester.c</FilePath>
+            </File>
+            <File>
+              <FileName>mycc936.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FATFS\exfuns\mycc936.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>TEXT</GroupName>
+          <Files>
+            <File>
+              <FileName>fontupd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\TEXT\fontupd.c</FilePath>
+            </File>
+            <File>
+              <FileName>text.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\TEXT\text.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>AUDIOCODEC</GroupName>
+          <Files>
+            <File>
+              <FileName>wavplay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\AUDIOCODEC\wav\wavplay.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>APP</GroupName>
+          <Files>
+            <File>
+              <FileName>audioplay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\audioplay.c</FilePath>
+            </File>
+            <File>
+              <FileName>videoplayer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\videoplayer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MJPEG</GroupName>
+          <Files>
+            <File>
+              <FileName>avi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\avi.c</FilePath>
+            </File>
+            <File>
+              <FileName>mjpeg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\mjpeg.c</FilePath>
+            </File>
+            <File>
+              <FileName>jaricom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jaricom.c</FilePath>
+            </File>
+            <File>
+              <FileName>jcomapi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jcomapi.c</FilePath>
+            </File>
+            <File>
+              <FileName>jutils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jutils.c</FilePath>
+            </File>
+            <File>
+              <FileName>jerror.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jerror.c</FilePath>
+            </File>
+            <File>
+              <FileName>jmemmgr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jmemmgr.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdapimin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdapimin.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdapistd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdapistd.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdarith.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdarith.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdmaster.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdmaster.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdinput.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdinput.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdmarker.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdmarker.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdhuff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdhuff.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdmainct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdmainct.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdcoefct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdcoefct.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdpostct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdpostct.c</FilePath>
+            </File>
+            <File>
+              <FileName>jddctmgr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jddctmgr.c</FilePath>
+            </File>
+            <File>
+              <FileName>jidctfst.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jidctfst.c</FilePath>
+            </File>
+            <File>
+              <FileName>jidctflt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jidctflt.c</FilePath>
+            </File>
+            <File>
+              <FileName>jidctint.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jidctint.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdsample.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdsample.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdcolor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdcolor.c</FilePath>
+            </File>
+            <File>
+              <FileName>jquant2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jquant2.c</FilePath>
+            </File>
+            <File>
+              <FileName>jquant1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jquant1.c</FilePath>
+            </File>
+            <File>
+              <FileName>jdmerge.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jdmerge.c</FilePath>
+            </File>
+            <File>
+              <FileName>jmemnobs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\jmemnobs.c</FilePath>
+            </File>
+            <File>
+              <FileName>wrppm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MJPEG\JPEG\wrppm.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>README</GroupName>
+          <Files>
+            <File>
+              <FileName>readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\readme.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>PICTURE</GroupName>
+          <Files>
+            <File>
+              <FileName>bmp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\PICTURE\bmp.c</FilePath>
+            </File>
+            <File>
+              <FileName>gif.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\PICTURE\gif.c</FilePath>
+            </File>
+            <File>
+              <FileName>piclib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\PICTURE\piclib.c</FilePath>
+            </File>
+            <File>
+              <FileName>tjpgd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\PICTURE\tjpgd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -632,16 +962,6 @@
               <FileName>os_cfg.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\UCOSII\CONFIG\os_cfg.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>README</GroupName>
-          <Files>
-            <File>
-              <FileName>readme.txt</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\readme.txt</FilePath>
             </File>
           </Files>
         </Group>

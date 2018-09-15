@@ -337,8 +337,9 @@ ARM Macro Assembler    Page 6
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=..\obj\os_cpu_a.d -o..\obj\os_cpu_a.o -ID:\GitHub\ucos-stm32F40
 7\source\USER\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0 -IC:\Keil_v5\
-ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 514" --predefine="STM32F4
-07xx SETA 1" --list=..\obj\os_cpu_a.lst ..\UCOSII\PORT\os_cpu_a.asm
+ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSIO
+N SETA 514" --predefine="STM32F407xx SETA 1" --list=..\obj\os_cpu_a.lst ..\UCOS
+II\PORT\os_cpu_a.asm
 
 
 
@@ -545,4 +546,4 @@ Symbol: OSTaskSwHook
       At line 180 in file ..\UCOSII\PORT\os_cpu_a.asm
 Comment: OSTaskSwHook used once
 8 symbols
-356 symbols in table
+357 symbols in table

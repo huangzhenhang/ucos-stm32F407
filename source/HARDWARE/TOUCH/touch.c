@@ -40,7 +40,25 @@ _m_tp_dev tp_dev=
 //默认为touchtype=0的数据.
 u8 CMD_RDX=0XD0;
 u8 CMD_RDY=0X90;
- 	 			    					   
+
+
+//获取触摸坐标
+//传入坐标点暂存指针
+int touchScan(char* p_point){
+	char point[2]={0,0};
+	p_point = point;
+	tp_dev.scan(0); 		 
+	if(tp_dev.sta&TP_PRES_DOWN)			//触摸屏被按下
+	{	
+		if(tp_dev.x[0]<lcddev.width&&tp_dev.y[0]<lcddev.height)
+		{	
+			p_point[0]=tp_dev.x[0];
+			p_point[1]=tp_dev.y[0];
+			return 1;
+		}
+	}else return 0;	//没有按键按下的时候 	   
+}
+
 //SPI写数据
 //向触摸屏IC写入1byte数据    
 //num:要写入的数据
@@ -245,19 +263,19 @@ void TP_Save_Adjdata(void)
 //        0，获取失败，要重新校准
 u8 TP_Get_Adjdata(void)
 {					  
-	s32 tempfac;
-	tempfac=AT24CXX_ReadOneByte(SAVE_ADDR_BASE+13);//读取标记字,看是否校准过！ 		 
-	if(tempfac==0X0A)//触摸屏已经校准过了			   
-	{    												 
-		tempfac=AT24CXX_ReadLenByte(SAVE_ADDR_BASE,4);		   
-		tp_dev.xfac=(float)tempfac/100000000;//得到x校准参数
-		tempfac=AT24CXX_ReadLenByte(SAVE_ADDR_BASE+4,4);			          
-		tp_dev.yfac=(float)tempfac/100000000;//得到y校准参数
+//	s32 tempfac;
+//	tempfac=AT24CXX_ReadOneByte(SAVE_ADDR_BASE+13);//读取标记字,看是否校准过！ 		 
+//	if(tempfac==0X0A)//触摸屏已经校准过了			   
+//	{    												 
+//		tempfac=AT24CXX_ReadLenByte(SAVE_ADDR_BASE,4);		   
+		tp_dev.xfac=(float)6592000/100000000;//得到x校准参数
+		//tempfac=AT24CXX_ReadLenByte(SAVE_ADDR_BASE+4,4);			          
+		tp_dev.yfac=(float)8618000/100000000;//得到y校准参数
 	    //得到x偏移量
-		tp_dev.xoff=AT24CXX_ReadLenByte(SAVE_ADDR_BASE+8,2);			   	  
+		tp_dev.xoff=-21;			   	  
  	    //得到y偏移量
-		tp_dev.yoff=AT24CXX_ReadLenByte(SAVE_ADDR_BASE+10,2);				 	  
- 		tp_dev.touchtype=AT24CXX_ReadOneByte(SAVE_ADDR_BASE+12);//读取触屏类型标记
+		tp_dev.yoff=-18;				 	  
+ 		tp_dev.touchtype=0;//读取触屏类型标记
 		if(tp_dev.touchtype)//X,Y方向与屏幕相反
 		{
 			CMD_RDX=0X90;
@@ -268,8 +286,8 @@ u8 TP_Get_Adjdata(void)
 			CMD_RDY=0X90;	 
 		}		 
 		return 1;	 
-	}
-	return 0;
+//	}
+//	return 0;
 }	 
 //提示字符串
 u8* const TP_REMIND_MSG_TBL="Please use the stylus click the cross on the screen.The cross will always move until the screen adjustment is completed.";
@@ -505,14 +523,14 @@ u8 TP_Init(void)
 		
    
 		TP_Read_XY(&tp_dev.x[0],&tp_dev.y[0]);//第一次读取初始化	 
-		AT24CXX_Init();		//初始化24CXX
-		if(TP_Get_Adjdata())return 0;//已经校准
-		else			   //未校准?
-		{ 										    
-			LCD_Clear(WHITE);//清屏
-			TP_Adjust();  	//屏幕校准 
-			TP_Save_Adjdata();	 
-		}			
+	//	AT24CXX_Init();		//初始化24CXX
+	//	if(TP_Get_Adjdata())return 0;//已经校准
+	//	else			   //未校准?
+	//	{ 										    
+	//		LCD_Clear(WHITE);//清屏
+	//		TP_Adjust();  	//屏幕校准 
+	//		TP_Save_Adjdata();	 
+	//	}			
 		TP_Get_Adjdata();	
 	}
 	return 1; 									 

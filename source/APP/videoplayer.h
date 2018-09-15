@@ -19,9 +19,8 @@
  
 #define AVI_AUDIO_BUF_SIZE    1024*5		//定义avi解码时,音频buf大小.
 #define AVI_VIDEO_BUF_SIZE    1024*60		//定义avi解码时,视频buf大小.
-#define KEY1_PRES_V	2
-#define KEY2_PRES_V	3
-#define CLOSE_PRES   5
+
+
 void video_play(void);
 u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total); 
 void video_time_show(FIL *favi,AVI_INFO *aviinfo);

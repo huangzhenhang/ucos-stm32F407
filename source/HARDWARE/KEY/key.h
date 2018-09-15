@@ -21,7 +21,6 @@
 #define WK_UP 	GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)	//PA0
 
 
-
 /*下面方式是通过位带操作方式读取IO*/
 /*
 #define KEY0 		PEin(4)   	//PE4
@@ -35,6 +34,7 @@
 #define KEY1_PRES	2
 #define KEY2_PRES	3
 #define WKUP_PRES   4
+#define CLOSE_PRES   5
 
 void KEY_Init(void);	//IO初始化
 u8 KEY_Scan(u8);  		//按键扫描函数	

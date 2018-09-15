@@ -1,7 +1,7 @@
 #ifndef __LCD_H
 #define __LCD_H		
 #include "sys.h"	 
-#include "stdlib.h" 
+#include "stdlib.h"
 #include "sram.h"   
 #include "piclib.h"	
 #include "string.h"	
@@ -157,11 +157,7 @@ typedef struct
 
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
-	
-void LCD_ShowHomePic(void);
-void LCD_ShowPlayerPic(void);
-u16 pic_get_tnum(u8 *path);//图像显示
-
+	    															  
 void LCD_Init(void);													   	//初始化
 void LCD_DisplayOn(void);													//开显示
 void LCD_DisplayOff(void);													//关显示
@@ -181,6 +177,9 @@ void LCD_ShowxNum(u16 x,u16 y,u32 num,u8 len,u8 size,u8 mode);				//显示 数字
 void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);		//显示一个字符串,12/16字体
 
 void LCD_WriteReg(u16 LCD_Reg, u16 LCD_RegValue);
+void LCD_ShowHomePic(void);
+void LCD_ShowPlayerPic(void);
+u16 pic_get_tnum(u8 *path);//图像显示
 u16 LCD_ReadReg(u16 LCD_Reg);
 void LCD_WriteRAM_Prepare(void);
 void LCD_WriteRAM(u16 RGB_Code);
