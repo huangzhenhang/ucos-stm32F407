@@ -18,6 +18,7 @@
 "..\obj\gt9147.o"
 "..\obj\ott2001a.o"
 "..\obj\touch.o"
+"..\obj\sram.o"
 "..\obj\delay.o"
 "..\obj\sys.o"
 "..\obj\usart.o"
@@ -90,6 +91,15 @@
 "..\obj\os_tmr.o"
 "..\obj\os_cpu_a.o"
 "..\obj\os_cpu_c.o"
+"..\obj\button.o"
+"..\obj\edit.o"
+"..\obj\filelistbox.o"
+"..\obj\gui.o"
+"..\obj\listbox.o"
+"..\obj\memo.o"
+"..\obj\progressbar.o"
+"..\obj\scrollbar.o"
+"..\obj\window.o"
 --library_type=microlib --strict --scatter "..\OBJ\VIDEOPLAYER.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

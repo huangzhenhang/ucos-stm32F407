@@ -271,6 +271,7 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 	while(res==0)
 	{ 
 		res=f_open(favi,(char *)pname,FA_READ);
+		OS_EXIT_CRITICAL();	
 		if(res==0)
 		{
 			pbuf=framebuf;			 	
@@ -377,14 +378,14 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 						pbuf=i2sbuf[i2ssavebuf];  
 	//					delay_ms(10);
 					}
-					
+					delay_ms(10);
 					tp_dev.scan(0);
 					if(tp_dev.sta&TP_PRES_DOWN){
 						I2S_Play_Stop();	//¹Ø±ÕÒôÆµ
-						delay_ms(300);
+						delay_ms(290);
 						tp_dev.scan(0);
 						if(tp_dev.sta&TP_PRES_DOWN){
-							delay_ms(1000);
+							delay_ms(700);
 							tp_dev.scan(0);
 							if(tp_dev.sta&TP_PRES_DOWN){
 								res = 0;
@@ -395,14 +396,13 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 								Show_Str(10,10,lcddev.width-10,16,namebuf,16,1);//ÏÔÊ¾ÎÄ¼þÃû
 								sprintf((char*)namebuf,"Ë÷Òý:%d/%d",index,total);	
 								Show_Str(10,30,lcddev.width-10,16,namebuf,16,1);//ÏÔÊ¾Ë÷Ò
-								void I2S_Play_Start(void);
 								break;
 							}
 						}else{
 							while(1){
 								tp_dev.scan(0);
 								if(tp_dev.sta&TP_PRES_DOWN){
-									delay_ms(300);
+									delay_ms(200);
 									I2S_Play_Start();
 									break;
 								}
@@ -410,18 +410,6 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 							}
 						}
 					} 	
-	//				key=KEY_Scan(0);
-	//				if(key==KEY0_PRES||key==KEY2_PRES)//KEY0/KEY2°´ÏÂ,²¥·ÅÏÂÒ»¸ö/ÉÏÒ»¸öÊÓÆµ
-	//				{
-	//					res=key;
-	//					break; 
-	//				}else if(key==KEY1_PRES||key==WKUP_PRES)
-	//				{
-	//					I2S_Play_Stop();//¹Ø±ÕÒôÆµ
-	//					video_seek(favi,&avix,framebuf);
-	//					pbuf=framebuf;
-	//					I2S_Play_Start();//¿ªÆôDMA²¥·Å 
-	//				}
 					if(avi_get_streaminfo(pbuf+avix.StreamSize))//¶ÁÈ¡ÏÂÒ»Ö¡ Á÷±êÖ¾
 					{
 						printf("frame error \r\n"); 
@@ -451,7 +439,6 @@ u8 video_play_mjpeg(u8 *pname, u8 *fn, u16 index, u16 total)
 	myfree(SRAMIN,framebuf);
 	myfree(SRAMIN,favi);
 	myfree(SRAMIN,namebuf);		
-	OS_EXIT_CRITICAL();	
 	return res;
 }
 //aviÎÄ¼þ²éÕÒ

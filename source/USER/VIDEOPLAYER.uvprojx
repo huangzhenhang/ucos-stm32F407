@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT;..\GUI</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -507,6 +507,11 @@
               <FileName>touch.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\TOUCH\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>sram.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\SRAM\sram.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -962,6 +967,56 @@
               <FileName>os_cfg.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\UCOSII\CONFIG\os_cfg.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>GUI</GroupName>
+          <Files>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>edit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\edit.c</FilePath>
+            </File>
+            <File>
+              <FileName>filelistbox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\filelistbox.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\gui.c</FilePath>
+            </File>
+            <File>
+              <FileName>listbox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\listbox.c</FilePath>
+            </File>
+            <File>
+              <FileName>memo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\memo.c</FilePath>
+            </File>
+            <File>
+              <FileName>progressbar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\progressbar.c</FilePath>
+            </File>
+            <File>
+              <FileName>scrollbar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\scrollbar.c</FilePath>
+            </File>
+            <File>
+              <FileName>window.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GUI\window.c</FilePath>
             </File>
           </Files>
         </Group>
