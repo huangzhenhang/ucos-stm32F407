@@ -19,6 +19,8 @@
 #include "piclib.h"	
 #include "fattester.h"	 
 #include "sram.h"
+#include "window.h"
+#include "gui.h"
 //ALIENTEK 探索者STM32F407开发板 实验57
 //UCOSII-信号量和邮箱    --库函数版本
 //技术支持：www.openedv.com
@@ -89,7 +91,7 @@ int main(void)
 	KEY_Init(); 				//按键初始化  
  	LCD_Init();					//LCD初始化 
 	tp_dev.init();				//触摸屏初始化
-	
+	gui_init();
 	my_mem_init(SRAMIN);		//初始化内部内存池 
 	my_mem_init(SRAMCCM);		//初始化CCM内存池 
 	exfuns_init();			//为fatfs相关变量申请内存  
@@ -177,37 +179,46 @@ void file_task(void *pdata)
 void main_task(void *pdata)
 {				
 	OS_CPU_SR cpu_sr=0;
+//	u8 *str = "ERROR";
 	while(1){
-		LCD_ShowHomePic(); 
-		POINT_COLOR=RED;
-		Show_Str(20,20,120,16,"视频播放器",16,1);		
-		Show_Str(135,20,120,16,"文件查看器",16,1);	
+//		LCD_ShowHomePic(); 
+//		POINT_COLOR=RED;
+//		Show_Str(20,20,120,16,"视频播放器",16,1);		
+//		Show_Str(135,20,120,16,"文件查看器",16,1);	
+		LCD_Clear(WHITE);
+//		_window_obj *win1;
+//		win1 = mymalloc(SRAMIN,sizeof(_window_obj));
+//		win1 = window_creat(10,10,100,200,0,128,16);
+//		window_draw(win1);	
+		window_msg_box(0,0,150,200,"ERROR","title",16,RED,3,255);
 		while(1)
 		{
-			if(TP_Scan(0))//先判断有没有触摸事件
-			{
-				if(tp_dev.x[0]>20 && tp_dev.x[0]<70 && tp_dev.y[0]>40 && tp_dev.y[0]<100)
-				{
-						POINT_COLOR=BLUE;
-						Show_Str(20,20,120,16,"视频播放器",16,1);	
-						delay_ms(300);
-						OS_ENTER_CRITICAL();//进入临界段,防止其他任务,打断LCD操作,导致液晶乱序.
-						OSTaskCreate(vedio_task,(void *)0,(OS_STK*)&VIDEO_TASK_STK[VIDEO_STK_SIZE-1],VIDEO_TASK_PRIO);		
-						OS_EXIT_CRITICAL();
-						OSTaskSuspend(MAIN_TASK_PRIO);	//挂起起始任务.
-						break;
-				}else if(tp_dev.x[0]>135 && tp_dev.x[0]<220 && tp_dev.y[0]>40 && tp_dev.y[0]<70)
-				{
-						POINT_COLOR=BLUE;
-						Show_Str(135,20,120,16,"文件查看器",16,1);	
-						delay_ms(300);
-				  	OS_ENTER_CRITICAL();//进入临界段,防止其他任务,打断LCD操作,导致液晶乱序.
-						OSTaskCreate(file_task,(void *)0,(OS_STK*)&FILE_TASK_STK[FILE_STK_SIZE-1],FILE_TASK_PRIO);		
-						OS_EXIT_CRITICAL();
-						OSTaskSuspend(MAIN_TASK_PRIO);	//挂起起始任务.
-						break;
-				}
-			}
+			LCD_Clear(WHITE);
+			//window_msg_box(0,0,100,200,str,"TITLE",12,RED,0,255);
+//			if(TP_Scan(0))//先判断有没有触摸事件
+//			{
+//				if(tp_dev.x[0]>20 && tp_dev.x[0]<70 && tp_dev.y[0]>40 && tp_dev.y[0]<100)
+//				{
+//						POINT_COLOR=BLUE;
+//						Show_Str(20,20,120,16,"视频播放器",16,1);	
+//						delay_ms(300);
+//						OS_ENTER_CRITICAL();//进入临界段,防止其他任务,打断LCD操作,导致液晶乱序.
+//						OSTaskCreate(vedio_task,(void *)0,(OS_STK*)&VIDEO_TASK_STK[VIDEO_STK_SIZE-1],VIDEO_TASK_PRIO);		
+//						OS_EXIT_CRITICAL();
+//						OSTaskSuspend(MAIN_TASK_PRIO);	//挂起起始任务.
+//						break;
+//				}else if(tp_dev.x[0]>135 && tp_dev.x[0]<220 && tp_dev.y[0]>40 && tp_dev.y[0]<70)
+//				{
+//						POINT_COLOR=BLUE;
+//						Show_Str(135,20,120,16,"文件查看器",16,1);	
+//						delay_ms(300);
+//				  	OS_ENTER_CRITICAL();//进入临界段,防止其他任务,打断LCD操作,导致液晶乱序.
+//						OSTaskCreate(file_task,(void *)0,(OS_STK*)&FILE_TASK_STK[FILE_STK_SIZE-1],FILE_TASK_PRIO);		
+//						OS_EXIT_CRITICAL();
+//						OSTaskSuspend(MAIN_TASK_PRIO);	//挂起起始任务.
+//						break;
+//				}
+//			}
 			delay_ms(1);
 		}
 	}

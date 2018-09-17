@@ -72,7 +72,7 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x5710F3E5)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x5710F3E5)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x5710F3E5)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x5710F3E5)
-F (.\main.c)(0x5B9E874E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\USER -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\LCD -I..\HARDWARE\KEY -I..\HARDWARE\SRAM -I..\HARDWARE\SDIO -I..\MALLOC -I..\USMART -I..\HARDWARE\SPI -I..\HARDWARE\W25QXX -I..\FATFS\exfuns -I..\FATFS\src -I..\TEXT -I..\FWLIB\inc -I..\HARDWARE\24CXX -I..\HARDWARE\IIC -I..\HARDWARE\I2S -I..\HARDWARE\WM8978 -I..\APP -I..\AUDIOCODEC\wav -I..\HARDWARE\TIMER -I..\MJPEG -I..\MJPEG\JPEG -I..\HARDWARE\TOUCH -I..\PICTURE -I..\UCOSII\CONFIG -I..\UCOSII\CORE -I..\UCOSII\PORT -I..\GUI-I D:\GitHub\ucos-stm32F407\source\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x5B9FDB80)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\USER -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\LCD -I..\HARDWARE\KEY -I..\HARDWARE\SRAM -I..\HARDWARE\SDIO -I..\MALLOC -I..\USMART -I..\HARDWARE\SPI -I..\HARDWARE\W25QXX -I..\FATFS\exfuns -I..\FATFS\src -I..\TEXT -I..\FWLIB\inc -I..\HARDWARE\24CXX -I..\HARDWARE\IIC -I..\HARDWARE\I2S -I..\HARDWARE\WM8978 -I..\APP -I..\AUDIOCODEC\wav -I..\HARDWARE\TIMER -I..\MJPEG -I..\MJPEG\JPEG -I..\HARDWARE\TOUCH -I..\PICTURE -I..\UCOSII\CONFIG -I..\UCOSII\CORE -I..\UCOSII\PORT -I..\GUI-I D:\GitHub\ucos-stm32F407\source\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x5B9BD863)
 I (..\USER\stm32f4xx.h)(0x5710F3EB)
 I (..\CORE\core_cm4.h)(0x5710F3E4)
@@ -146,6 +146,16 @@ I (..\APP\videoplayer.h)(0x5B8EBB4B)
 I (..\MJPEG\avi.h)(0x5710F3EB)
 I (..\HARDWARE\TIMER\timer.h)(0x5710F3E6)
 I (..\FATFS\exfuns\fattester.h)(0x5B90E1CD)
+I (..\GUI\window.h)(0x5710F476)
+I (..\GUI\guix.h)(0x5710F476)
+I (..\GUI\button.h)(0x5710F476)
+I (..\GUI\gui.h)(0x5710F476)
+I (..\GUI\listbox.h)(0x5710F476)
+I (..\GUI\scrollbar.h)(0x5710F476)
+I (..\GUI\progressbar.h)(0x5710F476)
+I (..\GUI\filelistbox.h)(0x5710F476)
+I (..\GUI\edit.h)(0x5710F476)
+I (..\GUI\memo.h)(0x5710F476)
 F (..\HARDWARE\LED\led.c)(0x5710F3E6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\USER -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\LCD -I..\HARDWARE\KEY -I..\HARDWARE\SRAM -I..\HARDWARE\SDIO -I..\MALLOC -I..\USMART -I..\HARDWARE\SPI -I..\HARDWARE\W25QXX -I..\FATFS\exfuns -I..\FATFS\src -I..\TEXT -I..\FWLIB\inc -I..\HARDWARE\24CXX -I..\HARDWARE\IIC -I..\HARDWARE\I2S -I..\HARDWARE\WM8978 -I..\APP -I..\AUDIOCODEC\wav -I..\HARDWARE\TIMER -I..\MJPEG -I..\MJPEG\JPEG -I..\HARDWARE\TOUCH -I..\PICTURE -I..\UCOSII\CONFIG -I..\UCOSII\CORE -I..\UCOSII\PORT -I..\GUI-I D:\GitHub\ucos-stm32F407\source\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
 I (..\HARDWARE\LED\led.h)(0x5710F3E6)
 I (..\SYSTEM\sys\sys.h)(0x5B9BD863)

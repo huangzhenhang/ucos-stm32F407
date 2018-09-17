@@ -75,3 +75,14 @@
 ..\obj\main.o: ..\MJPEG\avi.h
 ..\obj\main.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\main.o: ..\FATFS\exfuns\fattester.h
+..\obj\main.o: ..\GUI\window.h
+..\obj\main.o: ..\GUI\guix.h
+..\obj\main.o: ..\GUI\button.h
+..\obj\main.o: ..\GUI\button.h
+..\obj\main.o: ..\GUI\gui.h
+..\obj\main.o: ..\GUI\listbox.h
+..\obj\main.o: ..\GUI\scrollbar.h
+..\obj\main.o: ..\GUI\progressbar.h
+..\obj\main.o: ..\GUI\filelistbox.h
+..\obj\main.o: ..\GUI\edit.h
+..\obj\main.o: ..\GUI\memo.h
