@@ -1,0 +1,13 @@
+..\obj\gui__memset.o: ..\UCGUI\Core\GUI__memset.c
+..\obj\gui__memset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gui__memset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUI.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui__memset.o: ..\UCGUI\Config\GUIConf.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUIType.h
+..\obj\gui__memset.o: ..\UCGUI\Core\LCD.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\gui__memset.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\gui__memset.o: ..\UCGUI\Core\GUI_X.h

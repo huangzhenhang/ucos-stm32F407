@@ -1,7 +1,7 @@
 #include "fontupd.h"
 #include "ff.h"	  
 #include "w25qxx.h"   
-#include "lcd.h"  
+#include "stm32lcd.h"  
 #include "string.h"
 #include "malloc.h"
 #include "delay.h"

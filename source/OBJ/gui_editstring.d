@@ -1,0 +1,16 @@
+..\obj\gui_editstring.o: ..\UCGUI\Widget\GUI_EditString.c
+..\obj\gui_editstring.o: ..\UCGUI\Widget\EDIT.h
+..\obj\gui_editstring.o: ..\UCGUI\WM\WM.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui_editstring.o: ..\UCGUI\Config\GUIConf.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUIType.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\LCD.h
+..\obj\gui_editstring.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\gui_editstring.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUI.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\gui_editstring.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_editstring.o: ..\UCGUI\Widget\EDIT_Private.h

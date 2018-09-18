@@ -1,0 +1,10 @@
+..\obj\edit_setinsertmode.o: ..\UCGUI\Widget\EDIT_SetInsertMode.c
+..\obj\edit_setinsertmode.o: ..\UCGUI\Widget\EDIT.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\WM\WM.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Config\GUIConf.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Core\GUIType.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Core\LCD.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\edit_setinsertmode.o: ..\UCGUI\Widget\EDIT_Private.h

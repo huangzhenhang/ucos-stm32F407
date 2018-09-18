@@ -1,0 +1,15 @@
+..\obj\radio.o: ..\UCGUI\Widget\RADIO.c
+..\obj\radio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\radio.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\radio.o: ..\UCGUI\Core\GUI.h
+..\obj\radio.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\radio.o: ..\UCGUI\Config\GUIConf.h
+..\obj\radio.o: ..\UCGUI\Core\GUIType.h
+..\obj\radio.o: ..\UCGUI\Core\LCD.h
+..\obj\radio.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\radio.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\radio.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\radio.o: ..\UCGUI\Core\GUI_X.h
+..\obj\radio.o: ..\UCGUI\Widget\RADIO_Private.h
+..\obj\radio.o: ..\UCGUI\WM\WM.h
+..\obj\radio.o: ..\UCGUI\WM\WM_GUI.h

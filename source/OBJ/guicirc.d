@@ -1,0 +1,16 @@
+..\obj\guicirc.o: ..\UCGUI\Core\GUICirc.c
+..\obj\guicirc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUI_Private.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUI.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\guicirc.o: ..\UCGUI\Config\GUIConf.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUIType.h
+..\obj\guicirc.o: ..\UCGUI\Core\LCD.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\guicirc.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\guicirc.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guicirc.o: ..\UCGUI\Core\LCD_Private.h
+..\obj\guicirc.o: ..\UCGUI\Core\LCD_ConfDefaults.h
+..\obj\guicirc.o: ..\UCGUI\Config\LCDConf.h

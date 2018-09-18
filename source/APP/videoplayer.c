@@ -4,7 +4,7 @@
 #include "usart.h"   
 #include "delay.h"
 #include "timer.h"
-#include "lcd.h"
+#include "stm32lcd.h"
 #include "led.h"
 #include "key.h"
 #include "malloc.h"

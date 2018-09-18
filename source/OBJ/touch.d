@@ -39,11 +39,11 @@
 ..\obj\touch.o: ..\HARDWARE\TOUCH\ott2001a.h
 ..\obj\touch.o: ..\HARDWARE\TOUCH\gt9147.h
 ..\obj\touch.o: ..\HARDWARE\TOUCH\ft5206.h
-..\obj\touch.o: ..\HARDWARE\LCD\lcd.h
+..\obj\touch.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\touch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\touch.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\touch.o: ..\PICTURE\piclib.h
-..\obj\touch.o: ..\HARDWARE\LCD\lcd.h
+..\obj\touch.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\touch.o: ..\MALLOC\malloc.h
 ..\obj\touch.o: ..\FATFS\src\ff.h
 ..\obj\touch.o: ..\FATFS\src\integer.h

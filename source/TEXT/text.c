@@ -1,7 +1,7 @@
 #include "sys.h" 
 #include "fontupd.h"
 #include "w25qxx.h"
-#include "lcd.h"
+#include "stm32lcd.h"
 #include "text.h"	
 #include "string.h"												    
 #include "usart.h"												    

@@ -1,7 +1,7 @@
 #ifndef __PICLIB_H
 #define __PICLIB_H	  		  
 #include "sys.h" 
-#include "lcd.h"
+#include "stm32lcd.h"
 #include "malloc.h"
 #include "ff.h"
 #include "exfuns.h"

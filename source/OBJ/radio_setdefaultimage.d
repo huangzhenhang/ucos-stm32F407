@@ -1,0 +1,10 @@
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Widget\RADIO_SetDefaultImage.c
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Widget\RADIO.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\WM\WM.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Config\GUIConf.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Core\GUIType.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Core\LCD.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\radio_setdefaultimage.o: ..\UCGUI\Widget\RADIO_Private.h

@@ -40,12 +40,12 @@
 ..\obj\exfuns.o: ..\FATFS\src\integer.h
 ..\obj\exfuns.o: ..\FATFS\src\ffconf.h
 ..\obj\exfuns.o: ..\FATFS\exfuns\fattester.h
-..\obj\exfuns.o: ..\HARDWARE\LCD\lcd.h
+..\obj\exfuns.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\exfuns.o: ..\SYSTEM\sys\sys.h
 ..\obj\exfuns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\exfuns.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\exfuns.o: ..\PICTURE\piclib.h
-..\obj\exfuns.o: ..\HARDWARE\LCD\lcd.h
+..\obj\exfuns.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\exfuns.o: ..\MALLOC\malloc.h
 ..\obj\exfuns.o: ..\PICTURE\bmp.h
 ..\obj\exfuns.o: ..\PICTURE\tjpgd.h

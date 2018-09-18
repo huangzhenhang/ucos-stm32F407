@@ -2,7 +2,7 @@
 #define __FATTESTER_H 			   
 #include <stm32f4xx.h>	   
 #include "ff.h"
-#include "lcd.h"
+#include "stm32lcd.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板

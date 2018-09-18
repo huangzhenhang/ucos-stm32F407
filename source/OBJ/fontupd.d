@@ -40,11 +40,11 @@
 ..\obj\fontupd.o: ..\FATFS\src\ffconf.h
 ..\obj\fontupd.o: ..\HARDWARE\W25QXX\w25qxx.h
 ..\obj\fontupd.o: ..\SYSTEM\sys\sys.h
-..\obj\fontupd.o: ..\HARDWARE\LCD\lcd.h
+..\obj\fontupd.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\fontupd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\fontupd.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\fontupd.o: ..\PICTURE\piclib.h
-..\obj\fontupd.o: ..\HARDWARE\LCD\lcd.h
+..\obj\fontupd.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\fontupd.o: ..\MALLOC\malloc.h
 ..\obj\fontupd.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\fontupd.o: ..\PICTURE\bmp.h

@@ -1,0 +1,17 @@
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Widget\EDIT_SetCursorAtChar.c
+..\obj\edit_setcursoratchar.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Widget\EDIT.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\WM\WM.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Config\GUIConf.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUIType.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\LCD.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUI.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUI_X.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\edit_setcursoratchar.o: ..\UCGUI\Widget\EDIT_Private.h

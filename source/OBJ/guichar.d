@@ -1,0 +1,13 @@
+..\obj\guichar.o: ..\UCGUI\Core\GUIChar.c
+..\obj\guichar.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\guichar.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\guichar.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\guichar.o: ..\UCGUI\Core\GUI.h
+..\obj\guichar.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\guichar.o: ..\UCGUI\Config\GUIConf.h
+..\obj\guichar.o: ..\UCGUI\Core\GUIType.h
+..\obj\guichar.o: ..\UCGUI\Core\LCD.h
+..\obj\guichar.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\guichar.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\guichar.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\guichar.o: ..\UCGUI\Core\GUI_X.h

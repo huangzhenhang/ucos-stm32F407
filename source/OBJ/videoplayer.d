@@ -46,11 +46,11 @@
 ..\obj\videoplayer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\videoplayer.o: ..\SYSTEM\delay\delay.h
 ..\obj\videoplayer.o: ..\HARDWARE\TIMER\timer.h
-..\obj\videoplayer.o: ..\HARDWARE\LCD\lcd.h
+..\obj\videoplayer.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\videoplayer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\videoplayer.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\videoplayer.o: ..\PICTURE\piclib.h
-..\obj\videoplayer.o: ..\HARDWARE\LCD\lcd.h
+..\obj\videoplayer.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\videoplayer.o: ..\MALLOC\malloc.h
 ..\obj\videoplayer.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\videoplayer.o: ..\PICTURE\bmp.h

@@ -1,0 +1,13 @@
+..\obj\guirealloc.o: ..\UCGUI\Core\GUIRealloc.c
+..\obj\guirealloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\guirealloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUI.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\guirealloc.o: ..\UCGUI\Config\GUIConf.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUIType.h
+..\obj\guirealloc.o: ..\UCGUI\Core\LCD.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\guirealloc.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\guirealloc.o: ..\UCGUI\Core\GUI_X.h

@@ -1,0 +1,16 @@
+..\obj\lcdrle4.o: ..\UCGUI\Core\LCDRLE4.c
+..\obj\lcdrle4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\LCD.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\lcdrle4.o: ..\UCGUI\Config\GUIConf.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUI_Private.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUI.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUIType.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_Private.h
+..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_ConfDefaults.h
+..\obj\lcdrle4.o: ..\UCGUI\Config\LCDConf.h

@@ -1,0 +1,9 @@
+..\obj\progbar_create.o: ..\UCGUI\Widget\PROGBAR_Create.c
+..\obj\progbar_create.o: ..\UCGUI\Widget\PROGBAR.h
+..\obj\progbar_create.o: ..\UCGUI\WM\WM.h
+..\obj\progbar_create.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\progbar_create.o: ..\UCGUI\Config\GUIConf.h
+..\obj\progbar_create.o: ..\UCGUI\Core\GUIType.h
+..\obj\progbar_create.o: ..\UCGUI\Core\LCD.h
+..\obj\progbar_create.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\progbar_create.o: ..\UCGUI\Widget\DIALOG_Intern.h

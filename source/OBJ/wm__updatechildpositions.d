@@ -1,0 +1,15 @@
+..\obj\wm__updatechildpositions.o: ..\UCGUI\WM\WM__UpdateChildPositions.c
+..\obj\wm__updatechildpositions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\WM\WM.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Config\GUIConf.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUIType.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\LCD.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUI.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\wm__updatechildpositions.o: ..\UCGUI\Core\GUI_X.h

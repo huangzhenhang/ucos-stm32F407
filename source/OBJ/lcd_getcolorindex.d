@@ -1,0 +1,14 @@
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\LCD_GetColorIndex.c
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\LCD_Private.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\LCD_ConfDefaults.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Config\LCDConf.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Config\GUIConf.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\LCD.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUIType.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI_X.h

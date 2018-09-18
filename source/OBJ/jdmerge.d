@@ -9,7 +9,7 @@
 ..\obj\jdmerge.o: ..\MJPEG\JPEG\jmorecfg.h
 ..\obj\jdmerge.o: ..\MJPEG\JPEG\jpegint.h
 ..\obj\jdmerge.o: ..\MJPEG\JPEG\jerror.h
-..\obj\jdmerge.o: ..\HARDWARE\LCD\lcd.h
+..\obj\jdmerge.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\jdmerge.o: ..\SYSTEM\sys\sys.h
 ..\obj\jdmerge.o: ..\USER\stm32f4xx.h
 ..\obj\jdmerge.o: ..\CORE\core_cm4.h
@@ -48,7 +48,7 @@
 ..\obj\jdmerge.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\jdmerge.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\jdmerge.o: ..\PICTURE\piclib.h
-..\obj\jdmerge.o: ..\HARDWARE\LCD\lcd.h
+..\obj\jdmerge.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\jdmerge.o: ..\MALLOC\malloc.h
 ..\obj\jdmerge.o: ..\FATFS\src\ff.h
 ..\obj\jdmerge.o: ..\FATFS\src\integer.h

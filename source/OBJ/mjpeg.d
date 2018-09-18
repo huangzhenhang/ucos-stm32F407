@@ -52,10 +52,10 @@
 ..\obj\mjpeg.o: ..\FATFS\src\ff.h
 ..\obj\mjpeg.o: ..\FATFS\src\integer.h
 ..\obj\mjpeg.o: ..\FATFS\src\ffconf.h
-..\obj\mjpeg.o: ..\HARDWARE\LCD\lcd.h
+..\obj\mjpeg.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\mjpeg.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\mjpeg.o: ..\PICTURE\piclib.h
-..\obj\mjpeg.o: ..\HARDWARE\LCD\lcd.h
+..\obj\mjpeg.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\mjpeg.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\mjpeg.o: ..\PICTURE\bmp.h
 ..\obj\mjpeg.o: ..\PICTURE\tjpgd.h

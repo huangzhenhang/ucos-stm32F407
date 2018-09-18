@@ -1,0 +1,10 @@
+..\obj\edit_default.o: ..\UCGUI\Widget\EDIT_Default.c
+..\obj\edit_default.o: ..\UCGUI\Widget\EDIT.h
+..\obj\edit_default.o: ..\UCGUI\WM\WM.h
+..\obj\edit_default.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\edit_default.o: ..\UCGUI\Config\GUIConf.h
+..\obj\edit_default.o: ..\UCGUI\Core\GUIType.h
+..\obj\edit_default.o: ..\UCGUI\Core\LCD.h
+..\obj\edit_default.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\edit_default.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\edit_default.o: ..\UCGUI\Widget\EDIT_Private.h

@@ -1,0 +1,16 @@
+..\obj\lcdcolor.o: ..\UCGUI\Core\LCDColor.c
+..\obj\lcdcolor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUI_Private.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUI.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\lcdcolor.o: ..\UCGUI\Config\GUIConf.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUIType.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\LCD.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_Private.h
+..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_ConfDefaults.h
+..\obj\lcdcolor.o: ..\UCGUI\Config\LCDConf.h

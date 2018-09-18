@@ -1,0 +1,11 @@
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUI__strlen.c
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUI.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui__strlen.o: ..\UCGUI\Config\GUIConf.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUIType.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\LCD.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\gui__strlen.o: ..\UCGUI\Core\GUI_X.h

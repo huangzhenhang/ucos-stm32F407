@@ -1,0 +1,17 @@
+..\obj\editfloat.o: ..\UCGUI\Widget\EDITFloat.c
+..\obj\editfloat.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\editfloat.o: ..\UCGUI\Widget\EDIT.h
+..\obj\editfloat.o: ..\UCGUI\WM\WM.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\editfloat.o: ..\UCGUI\Config\GUIConf.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUIType.h
+..\obj\editfloat.o: ..\UCGUI\Core\LCD.h
+..\obj\editfloat.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\editfloat.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUI.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUI_X.h
+..\obj\editfloat.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\editfloat.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\editfloat.o: ..\UCGUI\Widget\EDIT_Private.h

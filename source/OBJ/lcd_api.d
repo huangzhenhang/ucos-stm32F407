@@ -1,0 +1,16 @@
+..\obj\lcd_api.o: ..\UCGUI\Core\LCD_API.c
+..\obj\lcd_api.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUI_Private.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUI.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\lcd_api.o: ..\UCGUI\Config\GUIConf.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUIType.h
+..\obj\lcd_api.o: ..\UCGUI\Core\LCD.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\lcd_api.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\lcd_api.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_api.o: ..\UCGUI\Core\LCD_Private.h
+..\obj\lcd_api.o: ..\UCGUI\Core\LCD_ConfDefaults.h
+..\obj\lcd_api.o: ..\UCGUI\Config\LCDConf.h

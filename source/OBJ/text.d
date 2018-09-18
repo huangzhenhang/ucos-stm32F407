@@ -37,11 +37,11 @@
 ..\obj\text.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\text.o: ..\TEXT\fontupd.h
 ..\obj\text.o: ..\HARDWARE\W25QXX\w25qxx.h
-..\obj\text.o: ..\HARDWARE\LCD\lcd.h
+..\obj\text.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\text.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\text.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\text.o: ..\PICTURE\piclib.h
-..\obj\text.o: ..\HARDWARE\LCD\lcd.h
+..\obj\text.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\text.o: ..\MALLOC\malloc.h
 ..\obj\text.o: ..\FATFS\src\ff.h
 ..\obj\text.o: ..\FATFS\src\integer.h

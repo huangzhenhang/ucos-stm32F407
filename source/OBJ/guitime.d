@@ -1,0 +1,12 @@
+..\obj\guitime.o: ..\UCGUI\Core\GUITime.c
+..\obj\guitime.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\guitime.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\guitime.o: ..\UCGUI\Core\GUI.h
+..\obj\guitime.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\guitime.o: ..\UCGUI\Config\GUIConf.h
+..\obj\guitime.o: ..\UCGUI\Core\GUIType.h
+..\obj\guitime.o: ..\UCGUI\Core\LCD.h
+..\obj\guitime.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\guitime.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\guitime.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\guitime.o: ..\UCGUI\Core\GUI_X.h

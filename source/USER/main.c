@@ -1,7 +1,7 @@
 #include "sys.h"
 #include "delay.h"  
 #include "usart.h"   
-#include "lcd.h"
+#include "stm32lcd.h"
 #include "key.h"  
 #include "touch.h"	 	
 #include "includes.h"
@@ -19,8 +19,7 @@
 #include "piclib.h"	
 #include "fattester.h"	 
 #include "sram.h"
-#include "window.h"
-#include "gui.h"
+
 //ALIENTEK 探索者STM32F407开发板 实验57
 //UCOSII-信号量和邮箱    --库函数版本
 //技术支持：www.openedv.com
@@ -89,9 +88,8 @@ int main(void)
 	uart_init(115200);		//初始化串口波特率为115200
 	
 	KEY_Init(); 				//按键初始化  
- 	LCD_Init();					//LCD初始化 
+ 	STM_LCD_Init();					//LCD初始化 
 	tp_dev.init();				//触摸屏初始化
-	gui_init();
 	my_mem_init(SRAMIN);		//初始化内部内存池 
 	my_mem_init(SRAMCCM);		//初始化CCM内存池 
 	exfuns_init();			//为fatfs相关变量申请内存  
@@ -100,7 +98,7 @@ int main(void)
 	
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
 	
- 	LCD_Init();					//LCD初始化  
+// 	LCD_Init();					//LCD初始化  
  	KEY_Init();					//按键初始化   
 	W25QXX_Init();				//初始化W25Q128
 	WM8978_Init();				//初始化WM8978	
@@ -190,7 +188,6 @@ void main_task(void *pdata)
 //		win1 = mymalloc(SRAMIN,sizeof(_window_obj));
 //		win1 = window_creat(10,10,100,200,0,128,16);
 //		window_draw(win1);	
-		window_msg_box(0,0,150,200,"ERROR","title",16,RED,3,255);
 		while(1)
 		{
 			LCD_Clear(WHITE);

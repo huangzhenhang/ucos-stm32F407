@@ -36,7 +36,7 @@
 #include "jinclude.h"
 #include "jpeglib.h"
 
-#include "lcd.h"
+#include "stm32lcd.h"
 
 
 #ifdef UPSAMPLE_MERGING_SUPPORTED
@@ -224,7 +224,7 @@ merged_1v_upsample (j_decompress_ptr cinfo,
 /*
  * Upsample and color convert for the case of 2:1 horizontal and 1:1 vertical.
  */
-#include "lcd.h"
+#include "stm32lcd.h"
 METHODDEF(void)
 h2v1_merged_upsample (j_decompress_ptr cinfo,
 		      JSAMPIMAGE input_buf, JDIMENSION in_row_group_ctr,

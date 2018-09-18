@@ -36,7 +36,7 @@
 ..\obj\gif.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\gif.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\gif.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\gif.o: ..\HARDWARE\LCD\lcd.h
+..\obj\gif.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gif.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\gif.o: ..\PICTURE\piclib.h

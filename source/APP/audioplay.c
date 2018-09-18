@@ -5,7 +5,7 @@
 #include "wm8978.h"
 #include "i2s.h"
 #include "led.h"
-#include "lcd.h"
+#include "stm32lcd.h"
 #include "delay.h"
 #include "key.h"
 #include "exfuns.h"  

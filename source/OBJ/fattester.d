@@ -38,12 +38,12 @@
 ..\obj\fattester.o: ..\FATFS\src\ff.h
 ..\obj\fattester.o: ..\FATFS\src\integer.h
 ..\obj\fattester.o: ..\FATFS\src\ffconf.h
-..\obj\fattester.o: ..\HARDWARE\LCD\lcd.h
+..\obj\fattester.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\fattester.o: ..\SYSTEM\sys\sys.h
 ..\obj\fattester.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\fattester.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\fattester.o: ..\PICTURE\piclib.h
-..\obj\fattester.o: ..\HARDWARE\LCD\lcd.h
+..\obj\fattester.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\fattester.o: ..\MALLOC\malloc.h
 ..\obj\fattester.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\fattester.o: ..\PICTURE\bmp.h

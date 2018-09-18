@@ -1,0 +1,17 @@
+..\obj\edithex.o: ..\UCGUI\Widget\EDITHex.c
+..\obj\edithex.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\edithex.o: ..\UCGUI\Widget\EDIT.h
+..\obj\edithex.o: ..\UCGUI\WM\WM.h
+..\obj\edithex.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\edithex.o: ..\UCGUI\Config\GUIConf.h
+..\obj\edithex.o: ..\UCGUI\Core\GUIType.h
+..\obj\edithex.o: ..\UCGUI\Core\LCD.h
+..\obj\edithex.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\edithex.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\edithex.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\edithex.o: ..\UCGUI\Core\GUI.h
+..\obj\edithex.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\edithex.o: ..\UCGUI\Core\GUI_X.h
+..\obj\edithex.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\edithex.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\edithex.o: ..\UCGUI\Widget\EDIT_Private.h

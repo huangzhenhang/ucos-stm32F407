@@ -1,0 +1,13 @@
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI_DispStringInRectMax.c
+..\obj\gui_dispstringinrectmax.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gui_dispstringinrectmax.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Config\GUIConf.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUIType.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\LCD.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI_X.h

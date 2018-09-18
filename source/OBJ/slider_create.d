@@ -1,0 +1,17 @@
+..\obj\slider_create.o: ..\UCGUI\Widget\SLIDER_Create.c
+..\obj\slider_create.o: ..\UCGUI\Widget\SLIDER.h
+..\obj\slider_create.o: ..\UCGUI\WM\WM.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\slider_create.o: ..\UCGUI\Config\GUIConf.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUIType.h
+..\obj\slider_create.o: ..\UCGUI\Core\LCD.h
+..\obj\slider_create.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\slider_create.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\slider_create.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\slider_create.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUI.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\slider_create.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\slider_create.o: ..\UCGUI\Core\GUI_X.h

@@ -46,11 +46,11 @@
 ..\obj\audioplay.o: ..\HARDWARE\WM8978\wm8978.h
 ..\obj\audioplay.o: ..\HARDWARE\I2S\i2s.h
 ..\obj\audioplay.o: ..\HARDWARE\LED\led.h
-..\obj\audioplay.o: ..\HARDWARE\LCD\lcd.h
+..\obj\audioplay.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\audioplay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\audioplay.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\audioplay.o: ..\PICTURE\piclib.h
-..\obj\audioplay.o: ..\HARDWARE\LCD\lcd.h
+..\obj\audioplay.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\audioplay.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\audioplay.o: ..\PICTURE\bmp.h
 ..\obj\audioplay.o: ..\PICTURE\tjpgd.h
