@@ -365,7 +365,11 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
+<<<<<<< HEAD
               <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT;..\UCGUI\AntiAlias;..\UCGUI\Config;..\UCGUI\ConvertColor;..\UCGUI\ConvertMono;..\UCGUI\Core;..\UCGUI\Font;..\UCGUI\GUI_X;..\UCGUI\JPEG;..\UCGUI\LCDDriver;..\UCGUI\MultiLayer;..\UCGUI\Widget;..\UCGUI\WM</IncludePath>
+=======
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT</IncludePath>
+>>>>>>> parent of c985146... multiple_task
             </VariousControls>
           </Cads>
           <Aads>
@@ -503,6 +507,7 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\TOUCH\touch.c</FilePath>
             </File>
+<<<<<<< HEAD
             <File>
               <FileName>sram.c</FileName>
               <FileType>1</FileType>
@@ -513,6 +518,8 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\LCD\stm32lcd.c</FilePath>
             </File>
+=======
+>>>>>>> parent of c985146... multiple_task
           </Files>
         </Group>
         <Group>
@@ -1133,6 +1140,7 @@
               <FileType>1</FileType>
               <FilePath>..\UCGUI\Core\GUI_ALLOC_AllocZero.c</FilePath>
             </File>
+<<<<<<< HEAD
             <File>
               <FileName>GUI_BMP.c</FileName>
               <FileType>1</FileType>
@@ -4003,6 +4011,8 @@
               <FileType>1</FileType>
               <FilePath>..\UCGUI\MultiLayer\LCD_4.c</FilePath>
             </File>
+=======
+>>>>>>> parent of c985146... multiple_task
           </Files>
         </Group>
       </Groups>
