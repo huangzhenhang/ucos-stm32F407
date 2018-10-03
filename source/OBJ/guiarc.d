@@ -11,3 +11,4 @@
 ..\obj\guiarc.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiarc.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiarc.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiarc.o: ..\UCGUI\WM\WM_GUI.h

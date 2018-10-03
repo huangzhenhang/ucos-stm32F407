@@ -11,6 +11,7 @@
 ..\obj\lcdgetp.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcdgetp.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcdgetp.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdgetp.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcdgetp.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcdgetp.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcdgetp.o: ..\UCGUI\Config\LCDConf.h

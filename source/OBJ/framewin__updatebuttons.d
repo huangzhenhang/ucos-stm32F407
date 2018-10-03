@@ -9,6 +9,7 @@
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Core\LCD.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\FRAMEWIN.h
+..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Core\GUI_Protected.h
@@ -17,4 +18,6 @@
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Core\GUI_X.h
+..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin__updatebuttons.o: ..\UCGUI\Widget\GUI_HOOK.h

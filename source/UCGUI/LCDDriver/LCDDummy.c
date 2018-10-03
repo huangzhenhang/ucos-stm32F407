@@ -389,7 +389,7 @@ void LCD_L0_SetPixelIndex(int x, int y, int PixelIndex) {
   #endif
   /* Write into hardware ... Adapt to your system */
   {
-		ili9320_SetPoint( xPhys, yPhys ,PixelIndex); //自己添加的
+		STM_SetPoint( xPhys, yPhys ,PixelIndex); //自己添加的
     /* ... */
   }
 }

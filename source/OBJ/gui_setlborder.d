@@ -10,3 +10,4 @@
 ..\obj\gui_setlborder.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_setlborder.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_setlborder.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_setlborder.o: ..\UCGUI\WM\WM_GUI.h

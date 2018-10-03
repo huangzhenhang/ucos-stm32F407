@@ -15,4 +15,6 @@
 ..\obj\text_settextcolor.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\text_settextcolor.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\text_settextcolor.o: ..\UCGUI\Core\GUI_X.h
+..\obj\text_settextcolor.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\text_settextcolor.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\text_settextcolor.o: ..\UCGUI\Core\GUI_Protected.h

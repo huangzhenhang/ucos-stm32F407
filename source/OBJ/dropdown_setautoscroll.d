@@ -16,5 +16,7 @@
 ..\obj\dropdown_setautoscroll.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\dropdown_setautoscroll.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\dropdown_setautoscroll.o: ..\UCGUI\Core\GUI_X.h
+..\obj\dropdown_setautoscroll.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\dropdown_setautoscroll.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\dropdown_setautoscroll.o: ..\UCGUI\Widget\GUI_ARRAY.h
 ..\obj\dropdown_setautoscroll.o: ..\UCGUI\Widget\LISTBOX.h

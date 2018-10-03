@@ -14,4 +14,6 @@
 ..\obj\menu_createindirect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\menu_createindirect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\menu_createindirect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\menu_createindirect.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\menu_createindirect.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\menu_createindirect.o: ..\UCGUI\Widget\WIDGET.h

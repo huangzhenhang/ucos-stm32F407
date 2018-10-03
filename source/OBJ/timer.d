@@ -39,3 +39,9 @@
 ..\obj\timer.o: ..\HARDWARE\LED\led.h
 ..\obj\timer.o: ..\SYSTEM\usart\usart.h
 ..\obj\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\timer.o: ..\UCGUI\Core\gui.h
+..\obj\timer.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\timer.o: ..\UCGUI\Config\GUIConf.h
+..\obj\timer.o: ..\UCGUI\Core\GUIType.h
+..\obj\timer.o: ..\UCGUI\Core\LCD.h
+..\obj\timer.o: ..\UCGUI\Core\GUIVersion.h

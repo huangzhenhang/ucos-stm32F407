@@ -9,3 +9,4 @@
 ..\obj\gui_dispstringat.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_dispstringat.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_dispstringat.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_dispstringat.o: ..\UCGUI\WM\WM_GUI.h

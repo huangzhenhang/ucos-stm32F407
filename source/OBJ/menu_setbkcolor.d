@@ -14,5 +14,8 @@
 ..\obj\menu_setbkcolor.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\menu_setbkcolor.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\menu_setbkcolor.o: ..\UCGUI\Core\GUI_X.h
+..\obj\menu_setbkcolor.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\menu_setbkcolor.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\menu_setbkcolor.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\menu_setbkcolor.o: ..\UCGUI\Widget\MENU_Private.h
+..\obj\menu_setbkcolor.o: ..\UCGUI\Widget\GUI_ARRAY.h

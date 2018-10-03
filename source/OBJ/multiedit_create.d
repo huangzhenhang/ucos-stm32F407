@@ -17,6 +17,8 @@
 ..\obj\multiedit_create.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\multiedit_create.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\multiedit_create.o: ..\UCGUI\Core\GUI_X.h
+..\obj\multiedit_create.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\multiedit_create.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\multiedit_create.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\multiedit_create.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\multiedit_create.o: ..\UCGUI\Widget\EDIT.h

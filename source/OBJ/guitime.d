@@ -10,3 +10,4 @@
 ..\obj\guitime.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guitime.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guitime.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guitime.o: ..\UCGUI\WM\WM_GUI.h

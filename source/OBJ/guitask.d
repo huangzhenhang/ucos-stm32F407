@@ -10,3 +10,4 @@
 ..\obj\guitask.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guitask.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guitask.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guitask.o: ..\UCGUI\WM\WM_GUI.h

@@ -26,98 +26,20 @@ Project File Date:  09/19/2018
 
 <h2>Output:</h2>
 Build target 'VIDEOPLAYER'
-compiling LCD_driver.c...
-..\PICTURE\gif.h(26): warning:  #47-D: incompatible redefinition of macro "LCD_MAX_LOG_COLORS" (declared at line 195 of "..\UCGUI\Core\LCD_ConfDefaults.h")
-  #define LCD_MAX_LOG_COLORS  256 
-..\UCGUI\LCDDriver\LCD_driver.c(659): warning:  #223-D: function "Ili9340_Init" declared implicitly
-        Ili9340_Init();
-..\UCGUI\LCDDriver\LCD_driver.c: 2 warnings, 0 errors
-compiling LCDDummy.c...
-..\PICTURE\gif.h(26): warning:  #47-D: incompatible redefinition of macro "LCD_MAX_LOG_COLORS" (declared at line 195 of "..\UCGUI\Core\LCD_ConfDefaults.h")
-  #define LCD_MAX_LOG_COLORS  256 
-..\UCGUI\LCDDriver\LCDDummy.c(392): warning:  #223-D: function "ili9320_SetPoint" declared implicitly
-                ili9320_SetPoint( xPhys, yPhys ,PixelIndex); //自己添加的
-..\UCGUI\LCDDriver\LCDDummy.c(410): warning:  #177-D: variable "xPhys" was declared but never referenced
-      int xPhys = LOG2PHYS_X(x, y);
-..\UCGUI\LCDDriver\LCDDummy.c(411): warning:  #177-D: variable "yPhys" was declared but never referenced
-      int yPhys = LOG2PHYS_Y(x, y);
-..\UCGUI\LCDDriver\LCDDummy.c(551): warning:  #223-D: function "LCD_hard_Init" declared implicitly
-    LCD_INIT_CONTROLLER();
-..\UCGUI\LCDDriver\LCDDummy.c: 5 warnings, 0 errors
+compiling main.c...
+main.c(197): warning:  #177-D: variable "cpu_sr" was declared but never referenced
+        OS_CPU_SR cpu_sr=0;
+main.c: 1 warning, 0 errors
 linking...
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_CreateDecompress multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_abort_decompress multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_destroy_decompress multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_finish_decompress multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_read_header multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_read_scanlines multiply defined (by jdapistd_1.o and jdapistd.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_resync_to_restart multiply defined (by jdmarker_1.o and jdmarker.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_start_decompress multiply defined (by jdapistd_1.o and jdapistd.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_std_error multiply defined (by jerror_1.o and jerror.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_abort multiply defined (by jcomapi_1.o and jcomapi.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_destroy multiply defined (by jcomapi_1.o and jcomapi.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_alloc_quant_table multiply defined (by jcomapi_1.o and jcomapi.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_alloc_huff_table multiply defined (by jcomapi_1.o and jcomapi.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_natural_order multiply defined (by jutils_1.o and jutils.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jdiv_round_up multiply defined (by jutils_1.o and jutils.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jround_up multiply defined (by jutils_1.o and jutils.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jcopy_sample_rows multiply defined (by jutils_1.o and jutils.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jcopy_block_row multiply defined (by jutils_1.o and jutils.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_std_message_table multiply defined (by jerror_1.o and jerror.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_memory_mgr multiply defined (by jmemmgr_1.o and jmemmgr.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_free_small multiply defined (by gui_jpeg.o and jmemnobs.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_get_small multiply defined (by gui_jpeg.o and jmemnobs.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_mem_available multiply defined (by gui_jpeg.o and jmemnobs.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_mem_init multiply defined (by gui_jpeg.o and jmemnobs.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_mem_term multiply defined (by gui_jpeg.o and jmemnobs.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_consume_input multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_input_complete multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_has_multiple_scans multiply defined (by jdapimin_1.o and jdapimin.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_input_controller multiply defined (by jdinput_1.o and jdinput.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_marker_reader multiply defined (by jdmarker_1.o and jdmarker.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_read_raw_data multiply defined (by jdapistd_1.o and jdapistd.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_start_output multiply defined (by jdapistd_1.o and jdapistd.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_finish_output multiply defined (by jdapistd_1.o and jdapistd.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_master_decompress multiply defined (by jdmaster_1.o and jdmaster.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_calc_output_dimensions multiply defined (by jdmaster_1.o and jdmaster.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_new_colormap multiply defined (by jdmaster_1.o and jdmaster.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_1pass_quantizer multiply defined (by jquant1_1.o and jquant1.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_2pass_quantizer multiply defined (by jquant2_1.o and jquant2.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_color_deconverter multiply defined (by jdcolor_1.o and jdcolor.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_d_coef_controller multiply defined (by jdcoefct_1.o and jdcoefct.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_d_main_controller multiply defined (by jdmainct_1.o and jdmainct.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_d_post_controller multiply defined (by jdpostct_1.o and jdpostct.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_huff_decoder multiply defined (by jdhuff_1.o and jdhuff.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_inverse_dct multiply defined (by jddctmgr_1.o and jddctmgr.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_merged_upsampler multiply defined (by jdmerge_1.o and jdmerge.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jinit_upsampler multiply defined (by jdsample_1.o and jdsample.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_set_marker_processor multiply defined (by jdmarker_1.o and jdmarker.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_idct_ifast multiply defined (by jidctfst_1.o and jidctfst.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol jpeg_idct_islow multiply defined (by jidctint_1.o and jidctint.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol __asm___9_jdmerge_c_adc12e86____REV16 multiply defined (by jdmerge_1.o and jdmerge.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol __asm___9_jdmerge_c_adc12e86____REVSH multiply defined (by jdmerge_1.o and jdmerge.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_SetLUTEntry multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_SetOrg multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_SetPixelIndex multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_DrawBitmap multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_DrawHLine multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_FillRect multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_Init multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_On multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_XorPixel multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_DrawVLine multiply defined (by lcddummy.o and lcd_driver.o).
-..\OBJ\VIDEOPLAYER.axf: Error: L6200E: Symbol LCD_L0_GetPixelIndex multiply defined (by lcddummy.o and lcd_driver.o).
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 0 warning and 62 error messages.
-"..\OBJ\VIDEOPLAYER.axf" - 62 Error(s), 7 Warning(s).
+Program Size: Code=117382 RO-data=15986 RW-data=960 ZI-data=1190608  
+FromELF: creating hex file...
+"..\OBJ\VIDEOPLAYER.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\GitHub\ucos-stm32F407\source\USER\RTE
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0
 
 <h2>Collection of Component Files used:</h2>
-Target not created.
 </pre>
 </body>
 </html>

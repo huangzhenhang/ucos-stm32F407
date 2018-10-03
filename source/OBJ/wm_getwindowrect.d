@@ -9,7 +9,7 @@
 ..\obj\wm_getwindowrect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\wm_getwindowrect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\wm_getwindowrect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\wm_getwindowrect.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\wm_getwindowrect.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\wm_getwindowrect.o: ..\UCGUI\WM\WM.h
-..\obj\wm_getwindowrect.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\wm_getwindowrect.o: ..\UCGUI\Core\GUI_Protected.h

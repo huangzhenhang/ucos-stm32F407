@@ -16,3 +16,5 @@
 ..\obj\button_bitmap.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\button_bitmap.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\button_bitmap.o: ..\UCGUI\Core\GUI_X.h
+..\obj\button_bitmap.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\button_bitmap.o: ..\UCGUI\Widget\WIDGET.h

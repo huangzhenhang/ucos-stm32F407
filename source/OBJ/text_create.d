@@ -15,3 +15,5 @@
 ..\obj\text_create.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\text_create.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\text_create.o: ..\UCGUI\Core\GUI_X.h
+..\obj\text_create.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\text_create.o: ..\UCGUI\Widget\WIDGET.h

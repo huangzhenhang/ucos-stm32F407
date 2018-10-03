@@ -9,3 +9,4 @@
 ..\obj\guiindex2color.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiindex2color.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiindex2color.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiindex2color.o: ..\UCGUI\WM\WM_GUI.h

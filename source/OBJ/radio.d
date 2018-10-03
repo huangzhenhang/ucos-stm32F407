@@ -10,6 +10,14 @@
 ..\obj\radio.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\radio.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\radio.o: ..\UCGUI\Core\GUI_X.h
+..\obj\radio.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\radio.o: ..\UCGUI\Widget\RADIO_Private.h
 ..\obj\radio.o: ..\UCGUI\WM\WM.h
-..\obj\radio.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\radio.o: ..\UCGUI\Widget\RADIO.h
+..\obj\radio.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\radio.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\radio.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\radio.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\radio.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\radio.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\radio.o: ..\UCGUI\Widget\GUI_ARRAY.h

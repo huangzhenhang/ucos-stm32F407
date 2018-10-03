@@ -11,6 +11,7 @@
 ..\obj\gui_selectlayer.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_selectlayer.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_selectlayer.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_selectlayer.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\gui_selectlayer.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\gui_selectlayer.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\gui_selectlayer.o: ..\UCGUI\Config\LCDConf.h

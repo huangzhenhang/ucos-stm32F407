@@ -9,3 +9,4 @@
 ..\obj\gui__intersectrect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui__intersectrect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui__intersectrect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui__intersectrect.o: ..\UCGUI\WM\WM_GUI.h

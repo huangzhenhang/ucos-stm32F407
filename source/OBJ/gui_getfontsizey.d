@@ -9,3 +9,4 @@
 ..\obj\gui_getfontsizey.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_getfontsizey.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_getfontsizey.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_getfontsizey.o: ..\UCGUI\WM\WM_GUI.h

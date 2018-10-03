@@ -10,3 +10,11 @@
 ..\obj\widget_fillstringinrect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\widget_fillstringinrect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\widget_fillstringinrect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\WM\WM.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\widget_fillstringinrect.o: ..\UCGUI\Widget\WIDGET.h

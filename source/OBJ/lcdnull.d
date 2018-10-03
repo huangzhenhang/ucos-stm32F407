@@ -13,3 +13,4 @@
 ..\obj\lcdnull.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\lcdnull.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcdnull.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdnull.o: ..\UCGUI\WM\WM_GUI.h

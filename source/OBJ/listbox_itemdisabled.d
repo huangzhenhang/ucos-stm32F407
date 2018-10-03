@@ -17,5 +17,7 @@
 ..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\LISTBOX_Private.h
 ..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\LISTBOX.h
 ..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_itemdisabled.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox_itemdisabled.o: ..\UCGUI\Core\GUI_Protected.h

@@ -10,6 +10,7 @@
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_index2colorex.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcd_index2colorex.o: ..\UCGUI\Config\LCDConf.h

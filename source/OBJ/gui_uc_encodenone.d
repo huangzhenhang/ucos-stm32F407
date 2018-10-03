@@ -9,3 +9,4 @@
 ..\obj\gui_uc_encodenone.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_uc_encodenone.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_uc_encodenone.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_uc_encodenone.o: ..\UCGUI\WM\WM_GUI.h

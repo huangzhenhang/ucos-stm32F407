@@ -16,3 +16,4 @@
 ..\obj\scrollbar_defaults.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\scrollbar_defaults.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\scrollbar_defaults.o: ..\UCGUI\Core\GUI_X.h
+..\obj\scrollbar_defaults.o: ..\UCGUI\Widget\SCROLLBAR.h

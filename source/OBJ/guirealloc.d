@@ -11,3 +11,4 @@
 ..\obj\guirealloc.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guirealloc.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guirealloc.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guirealloc.o: ..\UCGUI\WM\WM_GUI.h

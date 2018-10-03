@@ -15,5 +15,7 @@
 ..\obj\button__setbitmapobj.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\button__setbitmapobj.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\button__setbitmapobj.o: ..\UCGUI\Core\GUI_X.h
+..\obj\button__setbitmapobj.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\button__setbitmapobj.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\button__setbitmapobj.o: ..\UCGUI\Widget\BUTTON_Private.h
 ..\obj\button__setbitmapobj.o: ..\UCGUI\Core\GUI_Protected.h

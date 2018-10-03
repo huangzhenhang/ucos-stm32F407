@@ -17,6 +17,8 @@
 ..\obj\dialog.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\dialog.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\dialog.o: ..\UCGUI\Core\GUI_X.h
+..\obj\dialog.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\dialog.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\dialog.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\dialog.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\dialog.o: ..\UCGUI\Widget\EDIT.h

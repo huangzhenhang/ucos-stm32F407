@@ -14,5 +14,8 @@
 ..\obj\menu__finditem.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\menu__finditem.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\menu__finditem.o: ..\UCGUI\Core\GUI_X.h
+..\obj\menu__finditem.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\menu__finditem.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\menu__finditem.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\menu__finditem.o: ..\UCGUI\Widget\MENU_Private.h
+..\obj\menu__finditem.o: ..\UCGUI\Widget\GUI_ARRAY.h

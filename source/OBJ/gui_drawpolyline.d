@@ -10,3 +10,4 @@
 ..\obj\gui_drawpolyline.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_drawpolyline.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_drawpolyline.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_drawpolyline.o: ..\UCGUI\WM\WM_GUI.h

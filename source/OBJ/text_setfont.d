@@ -17,4 +17,6 @@
 ..\obj\text_setfont.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\text_setfont.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\text_setfont.o: ..\UCGUI\Core\GUI_X.h
+..\obj\text_setfont.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\text_setfont.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\text_setfont.o: ..\UCGUI\Core\GUI_Protected.h

@@ -16,6 +16,9 @@
 ..\obj\menu.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\menu.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\menu.o: ..\UCGUI\Core\GUI_X.h
+..\obj\menu.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\menu.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\menu.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\menu.o: ..\UCGUI\Widget\MENU_Private.h
+..\obj\menu.o: ..\UCGUI\Widget\GUI_ARRAY.h
 ..\obj\menu.o: ..\UCGUI\Core\GUI_Protected.h

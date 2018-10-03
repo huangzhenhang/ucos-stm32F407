@@ -11,11 +11,12 @@
 ..\obj\scrollbar.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\scrollbar.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\scrollbar.o: ..\UCGUI\Core\GUI_X.h
+..\obj\scrollbar.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\scrollbar.o: ..\UCGUI\Widget\SCROLLBAR_Private.h
 ..\obj\scrollbar.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\scrollbar.o: ..\UCGUI\WM\WM.h
-..\obj\scrollbar.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\scrollbar.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\scrollbar.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\scrollbar.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\scrollbar.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\scrollbar.o: ..\UCGUI\Widget\SCROLLBAR.h

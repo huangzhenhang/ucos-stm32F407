@@ -16,6 +16,8 @@
 ..\obj\listbox_font.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\listbox_font.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\listbox_font.o: ..\UCGUI\Core\GUI_X.h
+..\obj\listbox_font.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\listbox_font.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_font.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox_font.o: ..\UCGUI\Widget\GUI_ARRAY.h
 ..\obj\listbox_font.o: ..\UCGUI\Core\GUI_Protected.h

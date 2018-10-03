@@ -15,5 +15,7 @@
 ..\obj\button_selfdraw.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\button_selfdraw.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\button_selfdraw.o: ..\UCGUI\Core\GUI_X.h
+..\obj\button_selfdraw.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\button_selfdraw.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\button_selfdraw.o: ..\UCGUI\Widget\BUTTON_Private.h
 ..\obj\button_selfdraw.o: ..\UCGUI\Core\GUI_Protected.h

@@ -16,5 +16,7 @@
 ..\obj\button_ispressed.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\button_ispressed.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\button_ispressed.o: ..\UCGUI\Core\GUI_X.h
+..\obj\button_ispressed.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\button_ispressed.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\button_ispressed.o: ..\UCGUI\Widget\BUTTON_Private.h
 ..\obj\button_ispressed.o: ..\UCGUI\Core\GUI_Protected.h

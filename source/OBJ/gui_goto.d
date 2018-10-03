@@ -12,3 +12,4 @@
 ..\obj\gui_goto.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_goto.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_goto.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_goto.o: ..\UCGUI\WM\WM_GUI.h

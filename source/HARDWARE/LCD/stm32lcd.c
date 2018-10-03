@@ -86,212 +86,220 @@ u16 BACK_COLOR=0xFFFF;  //背景色
 //默认为竖屏
 _lcd_dev lcddev;
 
-void LCD_ShowPlayerPic(void)
+void STM_SetPoint(u16 x,u16 y,u16 color)
 {
-	u8 res;
-	DIR *picdir;
-	FILINFO *picfileinfo;
-	u16 *picindextbl;
-	u8 *fn;   			//长文件名
-	u8 *pname;			//带路径的文件名
-//	u16 totpicnum; 		//图片文件总数
-	u16 curindex;		//图片当前索引
-	u16 temp;
-	picfileinfo=mymalloc(SRAMIN,sizeof(FILINFO));
-	picdir=mymalloc(SRAMIN,sizeof(DIR));	//为长文件缓存区分配内存
-	res=f_opendir(picdir,(const TCHAR*)"0:/PICTURE"); 	//打开目录	
-//	f_opendir(picdir,"0:/PICTURE");
-	while(f_opendir(picdir,"0:/PICTURE"))//打开图片文件夹
- 	{	    
-		Show_Str(30,170,240,16,"PICTURE文件夹错误!",16,0);
-		delay_ms(200);				  
-		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
-		delay_ms(200);				  
-	}  
-//	totpicnum=pic_get_tnum("0:/PICTURE"); //得到总有效文件数
-//  	while(totpicnum==NULL)//图片文件为0		
+	POINT_COLOR=color;
+	LCD_DrawPoint(x,y);
+}
+
+
+
+//void LCD_ShowPlayerPic(void)
+//{
+//	u8 res;
+//	DIR *picdir;
+//	FILINFO *picfileinfo;
+//	u16 *picindextbl;
+//	u8 *fn;   			//长文件名
+//	u8 *pname;			//带路径的文件名
+////	u16 totpicnum; 		//图片文件总数
+//	u16 curindex;		//图片当前索引
+//	u16 temp;
+//	picfileinfo=mymalloc(SRAMIN,sizeof(FILINFO));
+//	picdir=mymalloc(SRAMIN,sizeof(DIR));	//为长文件缓存区分配内存
+//	res=f_opendir(picdir,(const TCHAR*)"0:/PICTURE"); 	//打开目录	
+////	f_opendir(picdir,"0:/PICTURE");
+//	while(f_opendir(picdir,"0:/PICTURE"))//打开图片文件夹
 // 	{	    
-//		Show_Str(30,170,240,16,"没有图片文件!",16,0);
+//		Show_Str(30,170,240,16,"PICTURE文件夹错误!",16,0);
 //		delay_ms(200);				  
 //		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
 //		delay_ms(200);				  
-//	}
-	picfileinfo->lfsize=_MAX_LFN*2+1;						//长文件名最大长度
-	picfileinfo->lfname=mymalloc(SRAMIN,picfileinfo->lfsize);	//为长文件缓存区分配内存
- 	pname=mymalloc(SRAMIN,picfileinfo->lfsize);				//为带路径的文件名分配内存
- 	picindextbl=mymalloc(SRAMIN,2*6);				//申请2*totpicnum个字节的内存,用于存放图片索引
- 	while(picfileinfo->lfname==NULL||pname==NULL||picindextbl==NULL)//内存分配出错
- 	{	    
-		Show_Str(30,170,240,16,"内存分配失败!",16,0);
-		delay_ms(200);				  
-		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
-		delay_ms(200);				  
-	}  	
-	//记录索引
-    res=f_opendir(picdir,"0:/PICTURE"); //打开目录
-	if(res==FR_OK)
-	{
-		curindex=0;//当前索引为0
-		while(1)//全部查询一遍
-		{
-			temp=picdir->index;								//记录当前index
-	        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
-	        if(res!=FR_OK||picfileinfo->fname[0]==0)break;	//错误了/到末尾了,退出		  
-     		fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
-			res=f_typetell(fn);	
-			if((res&0XF0)==0X50)//取高四位,看看是不是图片文件	
-			{
-				picindextbl[curindex]=temp;//记录索引
-				curindex++;
-			}	    
-		} 
-	}   
-//	delay_ms(500);
-	piclib_init();										//初始化画图	   	   
-	curindex=1;											//从0开始显示
-	res=f_opendir(picdir,(const TCHAR*)"0:/PICTURE"); 	//打开目录
-	while(res==FR_OK)//打开成功
-	{	
-		dir_sdi(picdir,picindextbl[curindex]);			//改变当前目录索引	   
-        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
-        if(res!=FR_OK||picfileinfo->fname[0]==0);	//错误了/到末尾了,退出
-     	fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
-		strcpy((char*)pname,"0:/PICTURE/");				//复制路径(目录)
-		strcat((char*)pname,(const char*)fn);  			//将文件名接在后面
- 	//	LCD_Clear(BLACK);
-		switch(curindex){
-			case 0:
-				ai_load_picfile(pname, 0, 0, 240, 320,1);//显示图
-				break;
-		  case 1:
-				ai_load_picfile(pname, 35, 140, 48, 48,1);//显示图
-				break;
-      case 2:
-				ai_load_picfile(pname, 35, 240, 48, 48,1);//显示图
-       break;
-			case 3:
-				ai_load_picfile(pname, 135, 140, 48, 48,1);//显示图
-			 break;			
-			case 4:
-				ai_load_picfile(pname, 135, 240, 48, 48,1);//显示图
-			 break;
-			default:
-				LCD_Clear(GBLUE);
-			 break;
-		}
- 		curindex++;
-		if(curindex>=5){
-			curindex=0;
-			break;
-		}
-//		delay_ms(100); 
-	} 					
-	f_closedir(picdir);	
-	myfree(SRAMIN,picdir);
-	myfree(SRAMIN,picfileinfo->lfname);	//释放内存	
-	myfree(SRAMIN,picfileinfo);	//释放内存	
-	myfree(SRAMIN,pname);				//释放内存			    
-	myfree(SRAMIN,picindextbl);			//释放内存		
+//	}  
+////	totpicnum=pic_get_tnum("0:/PICTURE"); //得到总有效文件数
+////  	while(totpicnum==NULL)//图片文件为0		
+//// 	{	    
+////		Show_Str(30,170,240,16,"没有图片文件!",16,0);
+////		delay_ms(200);				  
+////		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
+////		delay_ms(200);				  
+////	}
+//	picfileinfo->lfsize=_MAX_LFN*2+1;						//长文件名最大长度
+//	picfileinfo->lfname=mymalloc(SRAMIN,picfileinfo->lfsize);	//为长文件缓存区分配内存
+// 	pname=mymalloc(SRAMIN,picfileinfo->lfsize);				//为带路径的文件名分配内存
+// 	picindextbl=mymalloc(SRAMIN,2*6);				//申请2*totpicnum个字节的内存,用于存放图片索引
+// 	while(picfileinfo->lfname==NULL||pname==NULL||picindextbl==NULL)//内存分配出错
+// 	{	    
+//		Show_Str(30,170,240,16,"内存分配失败!",16,0);
+//		delay_ms(200);				  
+//		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
+//		delay_ms(200);				  
+//	}  	
+//	//记录索引
+//    res=f_opendir(picdir,"0:/PICTURE"); //打开目录
+//	if(res==FR_OK)
+//	{
+//		curindex=0;//当前索引为0
+//		while(1)//全部查询一遍
+//		{
+//			temp=picdir->index;								//记录当前index
+//	        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
+//	        if(res!=FR_OK||picfileinfo->fname[0]==0)break;	//错误了/到末尾了,退出		  
+//     		fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
+//			res=f_typetell(fn);	
+//			if((res&0XF0)==0X50)//取高四位,看看是不是图片文件	
+//			{
+//				picindextbl[curindex]=temp;//记录索引
+//				curindex++;
+//			}	    
+//		} 
+//	}   
+////	delay_ms(500);
+//	piclib_init();										//初始化画图	   	   
+//	curindex=1;											//从0开始显示
+//	res=f_opendir(picdir,(const TCHAR*)"0:/PICTURE"); 	//打开目录
+//	while(res==FR_OK)//打开成功
+//	{	
+//		dir_sdi(picdir,picindextbl[curindex]);			//改变当前目录索引	   
+//        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
+//        if(res!=FR_OK||picfileinfo->fname[0]==0);	//错误了/到末尾了,退出
+//     	fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
+//		strcpy((char*)pname,"0:/PICTURE/");				//复制路径(目录)
+//		strcat((char*)pname,(const char*)fn);  			//将文件名接在后面
+// 	//	LCD_Clear(BLACK);
+//		switch(curindex){
+//			case 0:
+//				ai_load_picfile(pname, 0, 0, 240, 320,1);//显示图
+//				break;
+//		  case 1:
+//				ai_load_picfile(pname, 35, 140, 48, 48,1);//显示图
+//				break;
+//      case 2:
+//				ai_load_picfile(pname, 35, 240, 48, 48,1);//显示图
+//       break;
+//			case 3:
+//				ai_load_picfile(pname, 135, 140, 48, 48,1);//显示图
+//			 break;			
+//			case 4:
+//				ai_load_picfile(pname, 135, 240, 48, 48,1);//显示图
+//			 break;
+//			default:
+//				LCD_Clear(GBLUE);
+//			 break;
+//		}
+// 		curindex++;
+//		if(curindex>=5){
+//			curindex=0;
+//			break;
+//		}
+////		delay_ms(100); 
+//	} 					
+//	f_closedir(picdir);	
+//	myfree(SRAMIN,picdir);
+//	myfree(SRAMIN,picfileinfo->lfname);	//释放内存	
+//	myfree(SRAMIN,picfileinfo);	//释放内存	
+//	myfree(SRAMIN,pname);				//释放内存			    
+//	myfree(SRAMIN,picindextbl);			//释放内存		
 
-}
+//}
 
 
 
 
 
-//屏幕显示
-void LCD_ShowHomePic(void)
-{
-		u8 res;
-	DIR *picdir;
-	FILINFO *picfileinfo;
-	u16 *picindextbl;
-	u8 *fn;   			//长文件名
-	u8 *pname;			//带路径的文件名
-//	u16 totpicnum; 		//图片文件总数
-	u16 curindex;		//图片当前索引
-	u16 temp;
-	picfileinfo=mymalloc(SRAMIN,sizeof(FILINFO));
-	picdir=mymalloc(SRAMIN,sizeof(DIR));	//为长文件缓存区分配内存
-	res=f_opendir(picdir,(const TCHAR*)"0:/APPICON"); 	//打开目录	
-//	f_opendir(picdir,"0:/PICTURE");
-	while(f_opendir(picdir,"0:/APPICON"))//打开图片文件夹
- 	{	    
-		Show_Str(30,170,240,16,"APPICON文件夹错误!",16,0);
-		delay_ms(200);				  
-		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
-		delay_ms(200);				  
-	}  
-	picfileinfo->lfsize=_MAX_LFN*2+1;						//长文件名最大长度
-	picfileinfo->lfname=mymalloc(SRAMIN,picfileinfo->lfsize);	//为长文件缓存区分配内存
- 	pname=mymalloc(SRAMIN,picfileinfo->lfsize);				//为带路径的文件名分配内存
- 	picindextbl=mymalloc(SRAMIN,2*3);				//申请2*totpicnum个字节的内存,用于存放图片索引
- 	while(picfileinfo->lfname==NULL||pname==NULL||picindextbl==NULL)//内存分配出错
- 	{	    
-		Show_Str(30,170,240,16,"内存分配失败!",16,0);
-		delay_ms(200);				  
-		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
-		delay_ms(200);				  
-	}  	
-	//记录索引
-    res=f_opendir(picdir,"0:/APPICON"); //打开目录
-	if(res==FR_OK)
-	{
-		curindex=0;//当前索引为0
-		while(1)//全部查询一遍
-		{
-			temp=picdir->index;								//记录当前index
-	        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
-	        if(res!=FR_OK||picfileinfo->fname[0]==0)break;	//错误了/到末尾了,退出		  
-     		fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
-			res=f_typetell(fn);	
-			if((res&0XF0)==0X50)//取高四位,看看是不是图片文件	
-			{
-				picindextbl[curindex]=temp;//记录索引
-				curindex++;
-			}	    
-		} 
-	}   
-//	delay_ms(500);
-	piclib_init();										//初始化画图	   	   
-	curindex=0;											//从0开始显示
-	res=f_opendir(picdir,(const TCHAR*)"0:/APPICON"); 	//打开目录
-	while(res==FR_OK)//打开成功
-	{	
-		dir_sdi(picdir,picindextbl[curindex]);			//改变当前目录索引	   
-        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
-        if(res!=FR_OK||picfileinfo->fname[0]==0);	//错误了/到末尾了,退出
-     	fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
-		strcpy((char*)pname,"0:/APPICON/");				//复制路径(目录)
-		strcat((char*)pname,(const char*)fn);  			//将文件名接在后面
- 	//	LCD_Clear(BLACK);
-		switch(curindex){
-			case 0:
-				ai_load_picfile(pname, 0, 0, 240, 320,1);//显示图
-				break;
-			case 1:
-				ai_load_picfile(pname, 35, 40, 48, 48,1);//显示图
-				break;
-		  case 2:
-				ai_load_picfile(pname, 150, 40, 48, 48,1);//显示图
-				break;
-			default:
-			 break;
-		}
- 		curindex++;
-		if(curindex>=3){
-			curindex=0;
-			break;
-		}
-//		delay_ms(100); 
-	} 					
-	f_closedir(picdir);	
-	myfree(SRAMIN,picdir);
-	myfree(SRAMIN,picfileinfo->lfname);	//释放内存	
-	myfree(SRAMIN,picfileinfo);	//释放内存	
-	myfree(SRAMIN,pname);				//释放内存			    
-	myfree(SRAMIN,picindextbl);			//释放内存		
-}
+////屏幕显示
+//void LCD_ShowHomePic(void)
+//{
+//		u8 res;
+//	DIR *picdir;
+//	FILINFO *picfileinfo;
+//	u16 *picindextbl;
+//	u8 *fn;   			//长文件名
+//	u8 *pname;			//带路径的文件名
+////	u16 totpicnum; 		//图片文件总数
+//	u16 curindex;		//图片当前索引
+//	u16 temp;
+//	picfileinfo=mymalloc(SRAMIN,sizeof(FILINFO));
+//	picdir=mymalloc(SRAMIN,sizeof(DIR));	//为长文件缓存区分配内存
+//	res=f_opendir(picdir,(const TCHAR*)"0:/APPICON"); 	//打开目录	
+////	f_opendir(picdir,"0:/PICTURE");
+//	while(f_opendir(picdir,"0:/APPICON"))//打开图片文件夹
+// 	{	    
+//		Show_Str(30,170,240,16,"APPICON文件夹错误!",16,0);
+//		delay_ms(200);				  
+//		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
+//		delay_ms(200);				  
+//	}  
+//	picfileinfo->lfsize=_MAX_LFN*2+1;						//长文件名最大长度
+//	picfileinfo->lfname=mymalloc(SRAMIN,picfileinfo->lfsize);	//为长文件缓存区分配内存
+// 	pname=mymalloc(SRAMIN,picfileinfo->lfsize);				//为带路径的文件名分配内存
+// 	picindextbl=mymalloc(SRAMIN,2*3);				//申请2*totpicnum个字节的内存,用于存放图片索引
+// 	while(picfileinfo->lfname==NULL||pname==NULL||picindextbl==NULL)//内存分配出错
+// 	{	    
+//		Show_Str(30,170,240,16,"内存分配失败!",16,0);
+//		delay_ms(200);				  
+//		LCD_Fill(30,170,240,186,WHITE);//清除显示	     
+//		delay_ms(200);				  
+//	}  	
+//	//记录索引
+//    res=f_opendir(picdir,"0:/APPICON"); //打开目录
+//	if(res==FR_OK)
+//	{
+//		curindex=0;//当前索引为0
+//		while(1)//全部查询一遍
+//		{
+//			temp=picdir->index;								//记录当前index
+//	        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
+//	        if(res!=FR_OK||picfileinfo->fname[0]==0)break;	//错误了/到末尾了,退出		  
+//     		fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
+//			res=f_typetell(fn);	
+//			if((res&0XF0)==0X50)//取高四位,看看是不是图片文件	
+//			{
+//				picindextbl[curindex]=temp;//记录索引
+//				curindex++;
+//			}	    
+//		} 
+//	}   
+////	delay_ms(500);
+//	piclib_init();										//初始化画图	   	   
+//	curindex=0;											//从0开始显示
+//	res=f_opendir(picdir,(const TCHAR*)"0:/APPICON"); 	//打开目录
+//	while(res==FR_OK)//打开成功
+//	{	
+//		dir_sdi(picdir,picindextbl[curindex]);			//改变当前目录索引	   
+//        res=f_readdir(picdir,picfileinfo);       		//读取目录下的一个文件
+//        if(res!=FR_OK||picfileinfo->fname[0]==0);	//错误了/到末尾了,退出
+//     	fn=(u8*)(*picfileinfo->lfname?picfileinfo->lfname:picfileinfo->fname);			 
+//		strcpy((char*)pname,"0:/APPICON/");				//复制路径(目录)
+//		strcat((char*)pname,(const char*)fn);  			//将文件名接在后面
+// 	//	LCD_Clear(BLACK);
+//		switch(curindex){
+//			case 0:
+//				ai_load_picfile(pname, 0, 0, 240, 320,1);//显示图
+//				break;
+//			case 1:
+//				ai_load_picfile(pname, 35, 40, 48, 48,1);//显示图
+//				break;
+//		  case 2:
+//				ai_load_picfile(pname, 150, 40, 48, 48,1);//显示图
+//				break;
+//			default:
+//			 break;
+//		}
+// 		curindex++;
+//		if(curindex>=3){
+//			curindex=0;
+//			break;
+//		}
+////		delay_ms(100); 
+//	} 					
+//	f_closedir(picdir);	
+//	myfree(SRAMIN,picdir);
+//	myfree(SRAMIN,picfileinfo->lfname);	//释放内存	
+//	myfree(SRAMIN,picfileinfo);	//释放内存	
+//	myfree(SRAMIN,pname);				//释放内存			    
+//	myfree(SRAMIN,picindextbl);			//释放内存		
+//}
 
 
 u16 pic_get_tnum(u8 *path)

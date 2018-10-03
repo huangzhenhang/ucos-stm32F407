@@ -9,3 +9,4 @@
 ..\obj\gui_settextalign.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_settextalign.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_settextalign.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_settextalign.o: ..\UCGUI\WM\WM_GUI.h

@@ -9,3 +9,4 @@
 ..\obj\gui_clearrectex.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_clearrectex.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_clearrectex.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_clearrectex.o: ..\UCGUI\WM\WM_GUI.h

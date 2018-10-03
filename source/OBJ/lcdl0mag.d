@@ -11,6 +11,7 @@
 ..\obj\lcdl0mag.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcdl0mag.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcdl0mag.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdl0mag.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcdl0mag.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcdl0mag.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcdl0mag.o: ..\UCGUI\Config\LCDConf.h

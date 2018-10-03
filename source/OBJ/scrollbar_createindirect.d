@@ -15,3 +15,4 @@
 ..\obj\scrollbar_createindirect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\scrollbar_createindirect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\scrollbar_createindirect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\scrollbar_createindirect.o: ..\UCGUI\Widget\SCROLLBAR.h

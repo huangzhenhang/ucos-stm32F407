@@ -68,10 +68,11 @@
 ..\obj\main.o: ..\UCOSII\CONFIG\includes.h
 ..\obj\main.o: ..\UCOSII\CONFIG\os_cfg.h
 ..\obj\main.o: ..\UCOSII\PORT\os_cpu.h
-..\obj\main.o: ..\HARDWARE\W25QXX\w25qxx.h
-..\obj\main.o: ..\HARDWARE\SDIO\sdio_sdcard.h
-..\obj\main.o: ..\HARDWARE\WM8978\wm8978.h
-..\obj\main.o: ..\APP\videoplayer.h
-..\obj\main.o: ..\MJPEG\avi.h
 ..\obj\main.o: ..\HARDWARE\TIMER\timer.h
-..\obj\main.o: ..\FATFS\exfuns\fattester.h
+..\obj\main.o: ..\UCGUI\Core\gui.h
+..\obj\main.o: ..\UCGUI\Core\GUI_ConfDefaults.h
+..\obj\main.o: ..\UCGUI\Config\GUIConf.h
+..\obj\main.o: ..\UCGUI\Core\GUIType.h
+..\obj\main.o: ..\UCGUI\Core\LCD.h
+..\obj\main.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\main.o: ..\UCGUI\Core\GUI_X.h

@@ -9,3 +9,4 @@
 ..\obj\gui__strlen.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui__strlen.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui__strlen.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui__strlen.o: ..\UCGUI\WM\WM_GUI.h

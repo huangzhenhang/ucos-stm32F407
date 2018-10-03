@@ -9,6 +9,7 @@
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\LCD.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Widget\FRAMEWIN.h
+..\obj\framewin_isminmax.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\GUI_Protected.h
@@ -17,5 +18,7 @@
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\GUI_X.h
+..\obj\framewin_isminmax.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\framewin_isminmax.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Widget\GUI_HOOK.h
 ..\obj\framewin_isminmax.o: ..\UCGUI\Core\GUI_Protected.h

@@ -11,3 +11,5 @@
 ..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_dispstringinrectmax.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\gui_dispstringinrectmax.o: ..\UCGUI\WM\WM.h

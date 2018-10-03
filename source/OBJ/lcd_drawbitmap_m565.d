@@ -11,6 +11,7 @@
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcd_drawbitmap_m565.o: ..\UCGUI\Config\LCDConf.h

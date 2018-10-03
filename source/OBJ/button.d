@@ -18,3 +18,5 @@
 ..\obj\button.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\button.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\button.o: ..\UCGUI\Core\GUI_X.h
+..\obj\button.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\button.o: ..\UCGUI\Widget\WIDGET.h

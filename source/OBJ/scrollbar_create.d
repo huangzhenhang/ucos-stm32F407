@@ -15,3 +15,4 @@
 ..\obj\scrollbar_create.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\scrollbar_create.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\scrollbar_create.o: ..\UCGUI\Core\GUI_X.h
+..\obj\scrollbar_create.o: ..\UCGUI\Widget\SCROLLBAR.h

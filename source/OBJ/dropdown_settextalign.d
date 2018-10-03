@@ -16,4 +16,6 @@
 ..\obj\dropdown_settextalign.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\dropdown_settextalign.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\dropdown_settextalign.o: ..\UCGUI\Core\GUI_X.h
+..\obj\dropdown_settextalign.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\dropdown_settextalign.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\dropdown_settextalign.o: ..\UCGUI\Widget\GUI_ARRAY.h

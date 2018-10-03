@@ -11,6 +11,7 @@
 ..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcdcolor.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcdcolor.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdcolor.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcdcolor.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcdcolor.o: ..\UCGUI\Config\LCDConf.h

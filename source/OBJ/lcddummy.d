@@ -13,6 +13,7 @@
 ..\obj\lcddummy.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\lcddummy.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcddummy.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcddummy.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcddummy.o: ..\HARDWARE\LCD\stm32lcd.h
 ..\obj\lcddummy.o: ..\SYSTEM\sys\sys.h
 ..\obj\lcddummy.o: ..\USER\stm32f4xx.h

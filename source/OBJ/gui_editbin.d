@@ -14,3 +14,8 @@
 ..\obj\gui_editbin.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_editbin.o: ..\UCGUI\Core\GUI_X.h
 ..\obj\gui_editbin.o: ..\UCGUI\Widget\EDIT_Private.h
+..\obj\gui_editbin.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\gui_editbin.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\gui_editbin.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\gui_editbin.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\gui_editbin.o: ..\UCGUI\Widget\WIDGET.h

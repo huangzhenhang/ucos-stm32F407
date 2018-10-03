@@ -10,3 +10,4 @@
 ..\obj\guiencjs.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiencjs.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiencjs.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiencjs.o: ..\UCGUI\WM\WM_GUI.h

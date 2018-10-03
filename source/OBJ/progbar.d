@@ -11,10 +11,12 @@
 ..\obj\progbar.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\progbar.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\progbar.o: ..\UCGUI\Core\GUI_X.h
+..\obj\progbar.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\progbar.o: ..\UCGUI\Widget\PROGBAR.h
 ..\obj\progbar.o: ..\UCGUI\WM\WM.h
-..\obj\progbar.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\progbar.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\progbar.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\progbar.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\progbar.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\progbar.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\progbar.o: ..\UCGUI\Widget\WIDGET.h

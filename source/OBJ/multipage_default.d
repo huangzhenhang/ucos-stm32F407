@@ -18,6 +18,8 @@
 ..\obj\multipage_default.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\multipage_default.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\multipage_default.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\multipage_default.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\multipage_default.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\multipage_default.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\multipage_default.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\multipage_default.o: ..\UCGUI\Widget\EDIT.h

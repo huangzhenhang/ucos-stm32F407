@@ -14,4 +14,6 @@
 ..\obj\listbox_create.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\listbox_create.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\listbox_create.o: ..\UCGUI\Core\GUI_X.h
+..\obj\listbox_create.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\listbox_create.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_create.o: ..\UCGUI\Widget\WIDGET.h

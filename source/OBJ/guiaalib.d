@@ -10,6 +10,7 @@
 ..\obj\guiaalib.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiaalib.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiaalib.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiaalib.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\guiaalib.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\guiaalib.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\guiaalib.o: ..\UCGUI\Config\LCDConf.h

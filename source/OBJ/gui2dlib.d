@@ -10,3 +10,4 @@
 ..\obj\gui2dlib.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui2dlib.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui2dlib.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui2dlib.o: ..\UCGUI\WM\WM_GUI.h

@@ -18,6 +18,7 @@
 ..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\LISTBOX_Private.h
 ..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\LISTBOX.h
 ..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\WIDGET.h
-..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_setautoscroll.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox_setautoscroll.o: ..\UCGUI\Core\GUI_Protected.h

@@ -6,3 +6,16 @@
 ..\obj\radio_setfont.o: ..\UCGUI\Core\GUIType.h
 ..\obj\radio_setfont.o: ..\UCGUI\Core\LCD.h
 ..\obj\radio_setfont.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\RADIO.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\radio_setfont.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\GUI.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\radio_setfont.o: ..\UCGUI\Core\GUI_X.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\radio_setfont.o: ..\UCGUI\Widget\GUI_ARRAY.h

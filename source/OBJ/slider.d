@@ -11,10 +11,12 @@
 ..\obj\slider.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\slider.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\slider.o: ..\UCGUI\Core\GUI_X.h
+..\obj\slider.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\slider.o: ..\UCGUI\Widget\SLIDER.h
 ..\obj\slider.o: ..\UCGUI\WM\WM.h
-..\obj\slider.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\slider.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\slider.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\slider.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\slider.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\slider.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\slider.o: ..\UCGUI\Widget\WIDGET.h

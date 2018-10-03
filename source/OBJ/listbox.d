@@ -18,6 +18,7 @@
 ..\obj\listbox.o: ..\UCGUI\Widget\LISTBOX_Private.h
 ..\obj\listbox.o: ..\UCGUI\Widget\LISTBOX.h
 ..\obj\listbox.o: ..\UCGUI\Widget\WIDGET.h
-..\obj\listbox.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\listbox.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\listbox.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox.o: ..\UCGUI\Core\GUI_Protected.h

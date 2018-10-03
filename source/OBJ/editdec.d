@@ -15,3 +15,8 @@
 ..\obj\editdec.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\editdec.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\editdec.o: ..\UCGUI\Widget\EDIT_Private.h
+..\obj\editdec.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\editdec.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\editdec.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\editdec.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\editdec.o: ..\UCGUI\Widget\WIDGET.h

@@ -15,3 +15,8 @@
 ..\obj\edithex.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\edithex.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\edithex.o: ..\UCGUI\Widget\EDIT_Private.h
+..\obj\edithex.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\edithex.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\edithex.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\edithex.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\edithex.o: ..\UCGUI\Widget\WIDGET.h

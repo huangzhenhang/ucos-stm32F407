@@ -9,3 +9,5 @@
 ..\obj\gui_onkey.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_onkey.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_onkey.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_onkey.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\gui_onkey.o: ..\UCGUI\WM\WM.h

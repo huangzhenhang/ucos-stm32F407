@@ -9,6 +9,7 @@
 ..\obj\guiaacircle.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiaacircle.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiaacircle.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiaacircle.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\guiaacircle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\guiaacircle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\guiaacircle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

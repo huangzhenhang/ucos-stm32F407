@@ -15,3 +15,5 @@
 ..\obj\gui_pid.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\gui_pid.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_pid.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_pid.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\gui_pid.o: ..\UCGUI\WM\WM.h

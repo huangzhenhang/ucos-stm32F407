@@ -18,6 +18,8 @@
 ..\obj\window.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\window.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\window.o: ..\UCGUI\Core\GUI_X.h
+..\obj\window.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\window.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\window.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\window.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\window.o: ..\UCGUI\Widget\EDIT.h

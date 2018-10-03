@@ -6,3 +6,4 @@
 ..\obj\framewin_createindirect.o: ..\UCGUI\Core\GUIType.h
 ..\obj\framewin_createindirect.o: ..\UCGUI\Core\LCD.h
 ..\obj\framewin_createindirect.o: ..\UCGUI\WM\WM_GUI.h
+..\obj\framewin_createindirect.o: ..\UCGUI\Widget\DIALOG_Intern.h

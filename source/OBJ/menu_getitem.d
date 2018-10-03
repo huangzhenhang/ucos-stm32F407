@@ -14,5 +14,8 @@
 ..\obj\menu_getitem.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\menu_getitem.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\menu_getitem.o: ..\UCGUI\Core\GUI_X.h
+..\obj\menu_getitem.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\menu_getitem.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\menu_getitem.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\menu_getitem.o: ..\UCGUI\Widget\MENU_Private.h
+..\obj\menu_getitem.o: ..\UCGUI\Widget\GUI_ARRAY.h

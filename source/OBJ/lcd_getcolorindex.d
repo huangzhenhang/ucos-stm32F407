@@ -12,3 +12,4 @@
 ..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcd_getcolorindex.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_getcolorindex.o: ..\UCGUI\WM\WM_GUI.h

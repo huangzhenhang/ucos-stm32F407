@@ -10,6 +10,8 @@
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_rotatecw.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcd_rotatecw.o: ..\UCGUI\Config\LCDConf.h
+..\obj\lcd_rotatecw.o: ..\UCGUI\WM\WM.h

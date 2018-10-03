@@ -17,6 +17,8 @@
 ..\obj\multipage_createindirect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\multipage_createindirect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\multipage_createindirect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\multipage_createindirect.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\multipage_createindirect.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\multipage_createindirect.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\multipage_createindirect.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\multipage_createindirect.o: ..\UCGUI\Widget\EDIT.h

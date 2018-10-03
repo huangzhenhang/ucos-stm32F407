@@ -16,3 +16,5 @@
 ..\obj\checkbox_image.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\checkbox_image.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\checkbox_image.o: ..\UCGUI\Core\GUI_X.h
+..\obj\checkbox_image.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\checkbox_image.o: ..\UCGUI\Widget\WIDGET.h

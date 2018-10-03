@@ -77,7 +77,8 @@ void  GUI_X_Delay (int period)
 */
 void GUI_X_ExecIdle (void) 
 {
-    OS_X_Delay(1);
+    //OS_X_Delay(1);
+		OSTimeDly(50); 
 }
 
 
@@ -155,8 +156,8 @@ void GUI_X_SignalEvent (void)
 
 static  void  CheckInit (void) 
 {
-    if (KeyIsInited == FALSE) {
-        KeyIsInited = TRUE;
+    if (KeyIsInited == 0) {
+        KeyIsInited = 1;
         GUI_X_Init();
     }
 }

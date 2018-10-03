@@ -13,3 +13,4 @@
 ..\obj\lcd_setcliprectex.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\lcd_setcliprectex.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcd_setcliprectex.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcd_setcliprectex.o: ..\UCGUI\WM\WM_GUI.h

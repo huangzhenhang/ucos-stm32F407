@@ -20,5 +20,6 @@
 ..\obj\dropdown.o: ..\UCGUI\Widget\DROPDOWN_Private.h
 ..\obj\dropdown.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\dropdown.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\dropdown.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\dropdown.o: ..\UCGUI\Core\GUI_Protected.h
 ..\obj\dropdown.o: ..\UCGUI\Widget\LISTBOX.h

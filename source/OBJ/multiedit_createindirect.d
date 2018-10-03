@@ -18,6 +18,8 @@
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\multiedit_createindirect.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\multiedit_createindirect.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Widget\CHECKBOX.h
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Widget\DROPDOWN.h
 ..\obj\multiedit_createindirect.o: ..\UCGUI\Widget\EDIT.h

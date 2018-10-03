@@ -9,6 +9,7 @@
 ..\obj\framewin.o: ..\UCGUI\Core\LCD.h
 ..\obj\framewin.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\framewin.o: ..\UCGUI\Widget\FRAMEWIN.h
+..\obj\framewin.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\framewin.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\framewin.o: ..\UCGUI\Core\GUI_Protected.h
@@ -17,5 +18,7 @@
 ..\obj\framewin.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\framewin.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\framewin.o: ..\UCGUI\Core\GUI_X.h
+..\obj\framewin.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\framewin.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\framewin.o: ..\UCGUI\Widget\GUI_HOOK.h
 ..\obj\framewin.o: ..\UCGUI\Core\GUI_Protected.h

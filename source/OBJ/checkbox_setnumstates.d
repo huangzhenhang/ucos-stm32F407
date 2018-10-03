@@ -14,5 +14,7 @@
 ..\obj\checkbox_setnumstates.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\checkbox_setnumstates.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\checkbox_setnumstates.o: ..\UCGUI\Core\GUI_X.h
-..\obj\checkbox_setnumstates.o: ..\UCGUI\Widget\CHECKBOX.h
+..\obj\checkbox_setnumstates.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\checkbox_setnumstates.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\checkbox_setnumstates.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\checkbox_setnumstates.o: ..\UCGUI\Widget\CHECKBOX.h

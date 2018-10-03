@@ -11,3 +11,4 @@
 ..\obj\gui_dispstringhcenter.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_dispstringhcenter.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_dispstringhcenter.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_dispstringhcenter.o: ..\UCGUI\WM\WM_GUI.h

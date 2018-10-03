@@ -15,3 +15,5 @@
 ..\obj\slider_createindirect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\slider_createindirect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\slider_createindirect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\slider_createindirect.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\slider_createindirect.o: ..\UCGUI\Widget\WIDGET.h

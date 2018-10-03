@@ -10,6 +10,7 @@
 ..\obj\guiaapoly.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guiaapoly.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guiaapoly.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guiaapoly.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\guiaapoly.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\guiaapoly.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\guiaapoly.o: ..\UCGUI\Config\LCDConf.h

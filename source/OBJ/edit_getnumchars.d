@@ -8,3 +8,13 @@
 ..\obj\edit_getnumchars.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\edit_getnumchars.o: ..\UCGUI\Widget\DIALOG_Intern.h
 ..\obj\edit_getnumchars.o: ..\UCGUI\Widget\EDIT_Private.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\edit_getnumchars.o: ..\UCGUI\WM\WM_Intern.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\GUI_Protected.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\GUI.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\GUIVersion.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\LCD_Protected.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\GUIDebug.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Core\GUI_X.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Widget\SCROLLBAR.h
+..\obj\edit_getnumchars.o: ..\UCGUI\Widget\WIDGET.h

@@ -10,3 +10,4 @@
 ..\obj\gui_cursorarrowmi.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_cursorarrowmi.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_cursorarrowmi.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_cursorarrowmi.o: ..\UCGUI\WM\WM_GUI.h

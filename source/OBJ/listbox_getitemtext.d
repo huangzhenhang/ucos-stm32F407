@@ -15,6 +15,8 @@
 ..\obj\listbox_getitemtext.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\listbox_getitemtext.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\listbox_getitemtext.o: ..\UCGUI\Core\GUI_X.h
+..\obj\listbox_getitemtext.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\listbox_getitemtext.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_getitemtext.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox_getitemtext.o: ..\UCGUI\Widget\GUI_ARRAY.h
 ..\obj\listbox_getitemtext.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

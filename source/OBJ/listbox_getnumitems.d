@@ -15,5 +15,7 @@
 ..\obj\listbox_getnumitems.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\listbox_getnumitems.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\listbox_getnumitems.o: ..\UCGUI\Core\GUI_X.h
+..\obj\listbox_getnumitems.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\listbox_getnumitems.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\listbox_getnumitems.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\listbox_getnumitems.o: ..\UCGUI\Widget\GUI_ARRAY.h

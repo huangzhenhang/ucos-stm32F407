@@ -11,11 +11,13 @@
 ..\obj\checkbox.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\checkbox.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\checkbox.o: ..\UCGUI\Core\GUI_X.h
+..\obj\checkbox.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\checkbox.o: ..\UCGUI\Widget\CHECKBOX_Private.h
 ..\obj\checkbox.o: ..\UCGUI\WM\WM.h
-..\obj\checkbox.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\checkbox.o: ..\UCGUI\Widget\WIDGET.h
 ..\obj\checkbox.o: ..\UCGUI\WM\WM_Intern.h
 ..\obj\checkbox.o: ..\UCGUI\Core\GUI_Protected.h
-..\obj\checkbox.o: ..\UCGUI\Widget\CHECKBOX.h
+..\obj\checkbox.o: ..\UCGUI\Widget\SCROLLBAR.h
 ..\obj\checkbox.o: ..\UCGUI\Widget\DIALOG_Intern.h
+..\obj\checkbox.o: ..\UCGUI\Widget\WIDGET.h
+..\obj\checkbox.o: ..\UCGUI\Widget\CHECKBOX.h

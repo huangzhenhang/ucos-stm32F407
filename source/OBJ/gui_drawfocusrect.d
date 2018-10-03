@@ -9,3 +9,4 @@
 ..\obj\gui_drawfocusrect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui_drawfocusrect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui_drawfocusrect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui_drawfocusrect.o: ..\UCGUI\WM\WM_GUI.h

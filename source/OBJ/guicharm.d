@@ -11,6 +11,7 @@
 ..\obj\guicharm.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\guicharm.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\guicharm.o: ..\UCGUI\Core\GUI_X.h
+..\obj\guicharm.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\guicharm.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\guicharm.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\guicharm.o: ..\UCGUI\Config\LCDConf.h

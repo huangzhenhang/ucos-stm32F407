@@ -10,3 +10,4 @@
 ..\obj\gui__calctextrect.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui__calctextrect.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui__calctextrect.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui__calctextrect.o: ..\UCGUI\WM\WM_GUI.h

@@ -11,6 +11,7 @@
 ..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\lcdrle4.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\lcdrle4.o: ..\UCGUI\Core\GUI_X.h
+..\obj\lcdrle4.o: ..\UCGUI\WM\WM_GUI.h
 ..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_Private.h
 ..\obj\lcdrle4.o: ..\UCGUI\Core\LCD_ConfDefaults.h
 ..\obj\lcdrle4.o: ..\UCGUI\Config\LCDConf.h

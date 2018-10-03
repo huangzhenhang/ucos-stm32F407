@@ -347,8 +347,8 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
-            <oTime>0</oTime>
+            <Optim>3</Optim>
+            <oTime>1</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
             <Strict>0</Strict>
@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT;..\GUI;..\UCGUI\AntiAlias;..\UCGUI\Config;..\UCGUI\ConvertColor;..\UCGUI\ConvertMono;..\UCGUI\Core;..\UCGUI\Font;..\UCGUI\GUI_X;..\UCGUI\JPEG;..\UCGUI\LCDDriver;..\UCGUI\MultiLayer;..\UCGUI\Widget;..\UCGUI\WM</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\SYSTEM\usart;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\SRAM;..\HARDWARE\SDIO;..\MALLOC;..\USMART;..\HARDWARE\SPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\src;..\TEXT;..\FWLIB\inc;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\I2S;..\HARDWARE\WM8978;..\APP;..\AUDIOCODEC\wav;..\HARDWARE\TIMER;..\MJPEG;..\MJPEG\JPEG;..\HARDWARE\TOUCH;..\PICTURE;..\UCOSII\CONFIG;..\UCOSII\CORE;..\UCOSII\PORT;..\UCGUI\AntiAlias;..\UCGUI\Config;..\UCGUI\ConvertColor;..\UCGUI\ConvertMono;..\UCGUI\Core;..\UCGUI\Font;..\UCGUI\GUI_X;..\UCGUI\JPEG;..\UCGUI\LCDDriver;..\UCGUI\MultiLayer;..\UCGUI\Widget;..\UCGUI\WM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -395,7 +395,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>..\OBJ\VIDEOPLAYER.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -693,156 +693,6 @@
               <FileType>1</FileType>
               <FilePath>..\APP\audioplay.c</FilePath>
             </File>
-            <File>
-              <FileName>videoplayer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\APP\videoplayer.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MJPEG</GroupName>
-          <Files>
-            <File>
-              <FileName>avi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\avi.c</FilePath>
-            </File>
-            <File>
-              <FileName>mjpeg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\mjpeg.c</FilePath>
-            </File>
-            <File>
-              <FileName>jaricom.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jaricom.c</FilePath>
-            </File>
-            <File>
-              <FileName>jcomapi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jcomapi.c</FilePath>
-            </File>
-            <File>
-              <FileName>jutils.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jutils.c</FilePath>
-            </File>
-            <File>
-              <FileName>jerror.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jerror.c</FilePath>
-            </File>
-            <File>
-              <FileName>jmemmgr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jmemmgr.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdapimin.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdapimin.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdapistd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdapistd.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdarith.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdarith.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdmaster.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdmaster.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdinput.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdinput.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdmarker.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdmarker.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdhuff.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdhuff.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdmainct.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdmainct.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdcoefct.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdcoefct.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdpostct.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdpostct.c</FilePath>
-            </File>
-            <File>
-              <FileName>jddctmgr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jddctmgr.c</FilePath>
-            </File>
-            <File>
-              <FileName>jidctfst.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jidctfst.c</FilePath>
-            </File>
-            <File>
-              <FileName>jidctflt.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jidctflt.c</FilePath>
-            </File>
-            <File>
-              <FileName>jidctint.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jidctint.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdsample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdsample.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdcolor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdcolor.c</FilePath>
-            </File>
-            <File>
-              <FileName>jquant2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jquant2.c</FilePath>
-            </File>
-            <File>
-              <FileName>jquant1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jquant1.c</FilePath>
-            </File>
-            <File>
-              <FileName>jdmerge.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jdmerge.c</FilePath>
-            </File>
-            <File>
-              <FileName>jmemnobs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\jmemnobs.c</FilePath>
-            </File>
-            <File>
-              <FileName>wrppm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MJPEG\JPEG\wrppm.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -852,31 +702,6 @@
               <FileName>readme.txt</FileName>
               <FileType>5</FileType>
               <FilePath>..\readme.txt</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>PICTURE</GroupName>
-          <Files>
-            <File>
-              <FileName>bmp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\PICTURE\bmp.c</FilePath>
-            </File>
-            <File>
-              <FileName>gif.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\PICTURE\gif.c</FilePath>
-            </File>
-            <File>
-              <FileName>piclib.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\PICTURE\piclib.c</FilePath>
-            </File>
-            <File>
-              <FileName>tjpgd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\PICTURE\tjpgd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2448,6 +2273,16 @@
               <FileType>1</FileType>
               <FilePath>..\UCGUI\GUI_X\GUI_X.c</FilePath>
             </File>
+            <File>
+              <FileName>GUI_X_Touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\GUI_X\GUI_X_Touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_X_uCOS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\GUI_X\GUI_X_uCOS.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2604,11 +2439,6 @@
           <GroupName>LCDDriver</GroupName>
           <Files>
             <File>
-              <FileName>LCD_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCGUI\LCDDriver\LCD_driver.c</FilePath>
-            </File>
-            <File>
               <FileName>LCDDummy.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UCGUI\LCDDriver\LCDDummy.c</FilePath>
@@ -2622,31 +2452,6 @@
               <FileName>LCDWin.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UCGUI\LCDDriver\LCDWin.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MultiLayer</GroupName>
-          <Files>
-            <File>
-              <FileName>LCD_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCGUI\MultiLayer\LCD_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD_2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCGUI\MultiLayer\LCD_2.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD_3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCGUI\MultiLayer\LCD_3.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD_4.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCGUI\MultiLayer\LCD_4.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4172,6 +3977,31 @@
               <FileName>WMTouch.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UCGUI\WM\WMTouch.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MultiLayer</GroupName>
+          <Files>
+            <File>
+              <FileName>LCD_1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\MultiLayer\LCD_1.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\MultiLayer\LCD_2.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\MultiLayer\LCD_3.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UCGUI\MultiLayer\LCD_4.c</FilePath>
             </File>
           </Files>
         </Group>

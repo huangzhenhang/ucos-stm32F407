@@ -10,3 +10,4 @@
 ..\obj\gui__strcmp.o: ..\UCGUI\Core\LCD_Protected.h
 ..\obj\gui__strcmp.o: ..\UCGUI\Core\GUIDebug.h
 ..\obj\gui__strcmp.o: ..\UCGUI\Core\GUI_X.h
+..\obj\gui__strcmp.o: ..\UCGUI\WM\WM_GUI.h
