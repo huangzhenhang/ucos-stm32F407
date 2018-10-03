@@ -18,8 +18,11 @@
 "..\obj\ott2001a.o"
 "..\obj\touch.o"
 <<<<<<< HEAD
+<<<<<<< HEAD
 "..\obj\sram.o"
 "..\obj\stm32lcd.o"
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
 "..\obj\delay.o"
@@ -61,6 +64,7 @@
 "..\obj\os_tmr.o"
 "..\obj\os_cpu_a.o"
 "..\obj\os_cpu_c.o"
+<<<<<<< HEAD
 <<<<<<< HEAD
 "..\obj\guiaaarc.o"
 "..\obj\guiaachar.o"
@@ -689,6 +693,8 @@
 "..\obj\lcd_2.o"
 "..\obj\lcd_3.o"
 "..\obj\lcd_4.o"
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
 --library_type=microlib --strict --scatter "..\OBJ\VIDEOPLAYER.sct"

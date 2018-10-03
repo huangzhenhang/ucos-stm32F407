@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 T1088 000:272 SEGGER J-Link V4.96d Log File (0000ms, 0264ms total)
 T1088 000:272 DLL Compiled: Jan 29 2015 11:45:37 (0000ms, 0264ms total)
 T1088 000:272 Logging started @ 2018-09-20 02:59 (0000ms, 0264ms total)
@@ -4330,6 +4331,16 @@ T24C4 000:307 JLINK_OpenEx(...)
 Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
 Hardware: V7.00
 S/N: 19087980
+=======
+T24C4 000:286 SEGGER J-Link V4.96d Log File (0021ms, 0284ms total)
+T24C4 000:286 DLL Compiled: Jan 29 2015 11:45:37 (0021ms, 0284ms total)
+T24C4 000:286 Logging started @ 2018-09-15 23:42 (0021ms, 0284ms total)
+T24C4 000:307 JLINK_SetWarnOutHandler(...) (0000ms, 0284ms total)
+T24C4 000:307 JLINK_OpenEx(...)
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N: 19087980
+>>>>>>> parent of c985146... multiple_task
 Feature(s): RDI, FlashDL, FlashBP, JFlash, GDBFull  returns O.K. (0260ms, 0544ms total)
 T24C4 000:567 JLINK_SetErrorOutHandler(...) (0000ms, 0544ms total)
 T24C4 000:567 JLINK_ExecCommand("ProjectFile = "D:\GitHub\ucos-stm32F407\source\USER\JLinkSettings.ini"", ...)Device "UNSPECIFIED" selected.  returns 0x00 (0008ms, 0552ms total)
@@ -11617,4 +11628,7 @@ T24C4 019:100 JLINK_Go() >0x1F0 JTAG> >0x1F0 JTAG> >0x1F0 JTAG> >0x1F0 JTAG> >0x
 T24C4 019:112 JLINK_Close() -- CPU is running >0x1F0 JTAG> -- CPU is running >0x1F0 JTAG> -- CPU is running >0x1F0 JTAG> -- CPU is running >0x1F0 JTAG> -- CPU is running >0x1F0 JTAG> -- CPU is running >0x1F0 JTAG> >0x80 JTAG> >0x08 JTAG> (0004ms, 4316ms total)
 T24C4 019:112  (0004ms, 4316ms total)
 T24C4 019:112 Closed (0004ms, 4316ms total)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task

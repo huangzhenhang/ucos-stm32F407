@@ -2,8 +2,11 @@
 #include "delay.h"  
 #include "usart.h"   
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "stm32lcd.h"
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
 #include "led.h"
 #include "lcd.h"
 >>>>>>> parent of c985146... multiple_task
@@ -29,6 +32,9 @@
 =======
 #include "piclib.h"	
 #include "fattester.h"	 
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 //ALIENTEK 探索者STM32F407开发板 实验57
 //UCOSII-信号量和邮箱    --库函数版本
@@ -53,7 +59,11 @@ void start_task(void *pdata);
 //触摸屏任务
 //设置任务优先级
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define MAIN_TASK_PRIO       			2 
+=======
+#define TOUCH_TASK_PRIO       		 	7
+>>>>>>> parent of c985146... multiple_task
 =======
 #define TOUCH_TASK_PRIO       		 	7
 >>>>>>> parent of c985146... multiple_task
@@ -64,6 +74,7 @@ OS_STK TOUCH_TASK_STK[TOUCH_STK_SIZE];
 //任务函数
 void touch_task(void *pdata);
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 //鼠标任务
@@ -97,6 +108,9 @@ void touch_task(void *pdata);
 //void FILE_task(void *pdata);
 
 =======
+=======
+
+>>>>>>> parent of c985146... multiple_task
 //LED任务
 //设置任务优先级
 #define LED_TASK_PRIO       			6 
@@ -106,9 +120,15 @@ void touch_task(void *pdata);
 OS_STK LED_TASK_STK[LED_STK_SIZE];
 //任务函数
 void led_task(void *pdata);
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> parent of c985146... multiple_task
 //主任务
 //设置任务优先级
 #define MAIN_TASK_PRIO       			4 
@@ -118,6 +138,9 @@ void led_task(void *pdata);
 OS_STK MAIN_TASK_STK[MAIN_STK_SIZE];
 //任务函数
 void main_task(void *pdata);
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 
 //按键扫描任务
@@ -163,6 +186,9 @@ int main(void)
 =======
 	
 	LED_Init();					//初始化LED 
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 	KEY_Init(); 				//按键初始化  
  	STM_LCD_Init();					//LCD初始化 
@@ -189,7 +215,10 @@ int main(void)
 //	TIM3_Int_Init(10000-1,8400-1);//10Khz计数,1秒钟中断一次
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
 	LED_Init();					//初始化LED 
  	LCD_Init();					//LCD初始化  
  	KEY_Init();					//按键初始化   
@@ -334,6 +363,7 @@ void start_task(void *pdata)
 	msg_key=OSMboxCreate((void*)0);	//创建消息邮箱 			  
 	OSStatInit();					//初始化统计任务.这里会延时1秒钟左右	
 <<<<<<< HEAD
+<<<<<<< HEAD
  	OS_ENTER_CRITICAL();			//进入临界区(无法被中断打断)    				   				    				   
 	OSTaskCreate(touch_task,(void *)0,(OS_STK*)&TOUCH_TASK_STK[TOUCH_STK_SIZE-1],TOUCH_TASK_PRIO);
 	OSTaskCreate(main_task,(void *)0,(OS_STK*)&MAIN_TASK_STK[MAIN_STK_SIZE-1],MAIN_TASK_PRIO);
@@ -379,6 +409,16 @@ void main_task(void *pdata)
  	OSTaskSuspend(START_TASK_PRIO);	//挂起起始任务.
 	OS_EXIT_CRITICAL();				//退出临界区(可以被中断打断)
 }	  
+=======
+ 	OS_ENTER_CRITICAL();			//进入临界区(无法被中断打断)    
+ //	OSTaskCreate(touch_task,(void *)0,(OS_STK*)&TOUCH_TASK_STK[TOUCH_STK_SIZE-1],TOUCH_TASK_PRIO);	 				   
+ //	OSTaskCreate(led_task,(void *)0,(OS_STK*)&LED_TASK_STK[LED_STK_SIZE-1],LED_TASK_PRIO);						    				   
+ 	OSTaskCreate(main_task,(void *)0,(OS_STK*)&MAIN_TASK_STK[MAIN_STK_SIZE-1],MAIN_TASK_PRIO);	 				   
+ //	OSTaskCreate(key_task,(void *)0,(OS_STK*)&KEY_TASK_STK[KEY_STK_SIZE-1],KEY_TASK_PRIO);	 				   
+ 	OSTaskSuspend(START_TASK_PRIO);	//挂起起始任务.
+	OS_EXIT_CRITICAL();				//退出临界区(可以被中断打断)
+}	  
+>>>>>>> parent of c985146... multiple_task
 //LED任务
 void led_task(void *pdata)
 {
@@ -430,6 +470,9 @@ void touch_task(void *pdata)
 //主任务
 void main_task(void *pdata)
 {				
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 	while(1){
 //		LCD_ShowHomePic(); 
@@ -547,6 +590,7 @@ void key_task(void *pdata)
  		delay_ms(10);
 	}
 }
+<<<<<<< HEAD
 
 void touch_task(void *pdata)
 {     
@@ -591,5 +635,7 @@ void touch_task(void *pdata)
 
 
 
+=======
+>>>>>>> parent of c985146... multiple_task
 
 

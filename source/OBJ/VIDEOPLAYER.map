@@ -5,11 +5,14 @@ Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
 Section Cross References
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     system_stm32f4xx.o(.text) refers to system_stm32f4xx.o(.data) for .data
     main.o(.text) refers to stm32lcd.o(.text) for LCD_ShowNum
     main.o(.text) refers to delay.o(.text) for delay_ms
     main.o(.text) refers to guicirc.o(.text) for GUI_DrawCircle
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
     system_stm32f4xx.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
     main.o(.text) refers to lcd.o(.text) for LCD_Clear
     main.o(.text) refers to text.o(.text) for Show_Str
@@ -17,6 +20,9 @@ Section Cross References
     main.o(.text) refers to delay.o(.text) for delay_ms
     main.o(.text) refers to videoplayer.o(.text) for video_play
     main.o(.text) refers to fattester.o(.text) for file_manage
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     main.o(.text) refers to os_mbox.o(.text) for OSMboxCreate
     main.o(.text) refers to os_core.o(.text) for OSStatInit
@@ -25,7 +31,11 @@ Section Cross References
     main.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
     main.o(.text) refers to usart.o(.text) for uart_init
 <<<<<<< HEAD
+<<<<<<< HEAD
     main.o(.text) refers to sram.o(.text) for FSMC_SRAM_Init
+=======
+    main.o(.text) refers to led.o(.text) for LED_Init
+>>>>>>> parent of c985146... multiple_task
 =======
     main.o(.text) refers to led.o(.text) for LED_Init
 >>>>>>> parent of c985146... multiple_task
@@ -54,6 +64,9 @@ Section Cross References
     main.o(.text) refers to touch.o(.data) for tp_dev
     main.o(.text) refers to main.o(.data) for msg_key
     main.o(.text) refers to main.o(.bss) for MAIN_TASK_STK
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     main.o(.text) refers to exfuns.o(.bss) for fs
     main.o(.text) refers to stm32lcd.o(.data) for POINT_COLOR
@@ -157,6 +170,7 @@ Section Cross References
     touch.o(.constdata) refers to touch.o(.conststring) for .conststring
     touch.o(.data) refers to touch.o(.text) for TP_Init
 <<<<<<< HEAD
+<<<<<<< HEAD
     sram.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
     sram.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
     sram.o(.text) refers to stm32f4xx_fsmc.o(.text) for FSMC_NORSRAMInit
@@ -174,6 +188,8 @@ Section Cross References
     stm32lcd.o(.text) refers to stm32f4xx_fsmc.o(.text) for FSMC_NORSRAMInit
     stm32lcd.o(.text) refers to printf8.o(i.__0printf$8) for __2printf
     stm32lcd.o(.text) refers to stm32lcd.o(.constdata) for .constdata
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
     delay.o(.text) refers to os_core.o(.text) for OSSchedLock
@@ -356,6 +372,7 @@ Section Cross References
     os_cpu_a.o(.text) refers to os_core.o(.data) for OSRunning
     os_cpu_a.o(.text) refers to os_cpu_c.o(.text) for OSTaskSwHook
     os_cpu_c.o(.text) refers to os_task.o(.text) for OS_TaskReturn
+<<<<<<< HEAD
 <<<<<<< HEAD
     lcdp0.o(.text) refers to gui_calccolordist.o(.text) for GUI_CalcColorDist
     gui__addspacehex.o(.text) refers to gui_addhex.o(.text) for GUI_AddHex
@@ -6279,6 +6296,8 @@ Section Cross References
     sin_x.o(i.__sin$lsc) refers to sin_x.o(i.____hardfp_sin$lsc) for ____hardfp_sin$lsc
 =======
 >>>>>>> parent of c985146... multiple_task
+=======
+>>>>>>> parent of c985146... multiple_task
     sqrt.o(i.__hardfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
     sqrt.o(i.__hardfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
     sqrt.o(i.__hardfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
@@ -6676,8 +6695,11 @@ Removing Unused input sections from the image.
     Removing led.o(.rev16_text), (4 bytes).
     Removing led.o(.revsh_text), (4 bytes).
 <<<<<<< HEAD
+<<<<<<< HEAD
     Removing led.o(.text), (68 bytes).
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
     Removing lcd.o(.rev16_text), (4 bytes).
     Removing lcd.o(.revsh_text), (4 bytes).
 >>>>>>> parent of c985146... multiple_task
@@ -6711,10 +6733,13 @@ Removing Unused input sections from the image.
     Removing touch.o(.rev16_text), (4 bytes).
     Removing touch.o(.revsh_text), (4 bytes).
 <<<<<<< HEAD
+<<<<<<< HEAD
     Removing sram.o(.rev16_text), (4 bytes).
     Removing sram.o(.revsh_text), (4 bytes).
     Removing stm32lcd.o(.rev16_text), (4 bytes).
     Removing stm32lcd.o(.revsh_text), (4 bytes).
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
     Removing delay.o(.rev16_text), (4 bytes).
@@ -6805,6 +6830,7 @@ Removing Unused input sections from the image.
     Removing os_cpu_c.o(.rev16_text), (4 bytes).
     Removing os_cpu_c.o(.revsh_text), (4 bytes).
     Removing os_cpu_c.o(.data), (4 bytes).
+<<<<<<< HEAD
 <<<<<<< HEAD
     Removing guiaaarc.o(.text), (2 bytes).
     Removing guiaachar.o(.text), (2 bytes).
@@ -11089,6 +11115,11 @@ Removing Unused input sections from the image.
 
 141 unused section(s) (total 6193 bytes) removed from the image.
 >>>>>>> parent of c985146... multiple_task
+=======
+    Removing dfixul.o(.text), (48 bytes).
+
+141 unused section(s) (total 6193 bytes) removed from the image.
+>>>>>>> parent of c985146... multiple_task
 
 ==============================================================================
 
@@ -11100,6 +11131,7 @@ Image Symbol Table
 
     ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
 <<<<<<< HEAD
+<<<<<<< HEAD
     ../clib/microlib/division.c              0x00000000   Number         0  ldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
@@ -11109,12 +11141,15 @@ Image Symbol Table
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_c.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_c.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  ldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
+<<<<<<< HEAD
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
@@ -11131,6 +11166,14 @@ Image Symbol Table
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
 =======
+=======
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+>>>>>>> parent of c985146... multiple_task
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
@@ -11138,6 +11181,7 @@ Image Symbol Table
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+<<<<<<< HEAD
 >>>>>>> parent of c985146... multiple_task
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
@@ -11173,6 +11217,22 @@ Image Symbol Table
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
 =======
+=======
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+>>>>>>> parent of c985146... multiple_task
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/fwrite.c          0x00000000   Number         0  fwrite.o ABSOLUTE
     ../clib/microlib/stdio/fwrite.c          0x00000000   Number         0  fwrite_e.o ABSOLUTE
@@ -11189,10 +11249,14 @@ Image Symbol Table
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/string/strncpy.c        0x00000000   Number         0  strncpy.o ABSOLUTE
 <<<<<<< HEAD
+<<<<<<< HEAD
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
 =======
     ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
+=======
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
+>>>>>>> parent of c985146... multiple_task
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  __0sscanf.o ABSOLUTE
@@ -11201,6 +11265,9 @@ Image Symbol Table
     ../clib/scanf.c                          0x00000000   Number         0  _sgetc.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _scanf_str.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _scanf.o ABSOLUTE
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
@@ -11211,7 +11278,10 @@ Image Symbol Table
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
 <<<<<<< HEAD
+<<<<<<< HEAD
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixi.o ABSOLUTE
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
@@ -11219,6 +11289,7 @@ Image Symbol Table
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     ../fplib/microlib/fpneg.c                0x00000000   Number         0  dneg.o ABSOLUTE
     ../fplib/microlib/fpsqrt.c               0x00000000   Number         0  dsqrt.o ABSOLUTE
+<<<<<<< HEAD
 <<<<<<< HEAD
     ../mathlib/ceil.c                        0x00000000   Number         0  ceil.o ABSOLUTE
     ../mathlib/cos.c                         0x00000000   Number         0  cos_x.o ABSOLUTE
@@ -11235,6 +11306,9 @@ Image Symbol Table
     ../mathlib/sin_i.c                       0x00000000   Number         0  sin_i_x.o ABSOLUTE
     ../mathlib/sin_i.c                       0x00000000   Number         0  sin_i.o ABSOLUTE
     ../mathlib/sqrt.c                        0x00000000   Number         0  sqrt.o ABSOLUTE
+=======
+    ../fplib/setjmp.s                        0x00000000   Number         0  setjmp.o ABSOLUTE
+>>>>>>> parent of c985146... multiple_task
 =======
     ../fplib/setjmp.s                        0x00000000   Number         0  setjmp.o ABSOLUTE
 >>>>>>> parent of c985146... multiple_task
@@ -12724,6 +12798,9 @@ Image Symbol Table
     .conststring                             0x08030520   Section       95  fontupd.o(.conststring)
     .conststring                             0x08030580   Section       29  avi.o(.conststring)
     .conststring                             0x080305a0   Section     4877  jerror.o(.conststring)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     .ARM.__AT_0x10000000                     0x10000000   Section    61440  malloc.o(.ARM.__AT_0x10000000)
     .ARM.__AT_0x1000F000                     0x1000f000   Section     3840  malloc.o(.ARM.__AT_0x1000F000)
@@ -12891,6 +12968,9 @@ Image Symbol Table
     .bss                                     0x2001c9b8   Section       60  piclib.o(.bss)
     .bss                                     0x2001c9f4   Section     2688  os_core.o(.bss)
     STACK                                    0x2001d478   Section     2560  startup_stm32f40_41xxx.o(STACK)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     .ARM.__AT_0x68000000                     0x68000000   Section    983040  malloc.o(.ARM.__AT_0x68000000)
     .ARM.__AT_0x680F0000                     0x680f0000   Section    61440  malloc.o(.ARM.__AT_0x680F0000)
@@ -15079,6 +15159,9 @@ Image Symbol Table
     __ctype_categories                       0x080301fc   Data          64  ctype_c.o(.constdata)
     Region$$Table$$Base                      0x080318b0   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x080318d0   Number         0  anon$$obj.o(Region$$Table)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     mem3base                                 0x10000000   Data       61440  malloc.o(.ARM.__AT_0x10000000)
     mem3mapbase                              0x1000f000   Data        3840  malloc.o(.ARM.__AT_0x1000F000)
@@ -15260,6 +15343,9 @@ Image Symbol Table
     OSTCBTbl                                 0x2001d00c   Data        1008  os_core.o(.bss)
     OSQTbl                                   0x2001d3fc   Data         120  os_core.o(.bss)
     __initial_sp                             0x2001de78   Data           0  startup_stm32f40_41xxx.o(STACK)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
     mem2base                                 0x68000000   Data       983040  malloc.o(.ARM.__AT_0x68000000)
     mem2mapbase                              0x680f0000   Data       61440  malloc.o(.ARM.__AT_0x680F0000)
@@ -15272,6 +15358,7 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00020cb8, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00020a14])
 
@@ -15576,6 +15663,14 @@ Memory Map of the image
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
+=======
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00031c1c, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x000319e0])
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000318d0, Max: 0x00100000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+>>>>>>> parent of c985146... multiple_task
     0x08000000   0x00000188   Data   RO          833    RESET               startup_stm32f40_41xxx.o
     0x08000188   0x00000000   Code   RO         2283  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
     0x08000188   0x00000004   Code   RO         2599    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
@@ -15767,6 +15862,9 @@ Memory Map of the image
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x0001de78, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x00000110])
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
@@ -15890,6 +15988,9 @@ Memory Map of the image
     0x2001c9f4   0x00000a80   Zero   RW         2045    .bss                os_core.o
     0x2001d474   0x00000004   PAD
     0x2001d478   0x00000a00   Zero   RW          831    STACK               startup_stm32f40_41xxx.o
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 
 
@@ -15901,7 +16002,11 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     0x10000000   0x0000f000   Zero   RW         1090    .ARM.__AT_0x10000000  malloc.o
+=======
+    0x10000000   0x0000f000   Zero   RW         1046    .ARM.__AT_0x10000000  malloc.o
+>>>>>>> parent of c985146... multiple_task
 =======
     0x10000000   0x0000f000   Zero   RW         1046    .ARM.__AT_0x10000000  malloc.o
 >>>>>>> parent of c985146... multiple_task
@@ -15915,7 +16020,11 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     0x1000f000   0x00000f00   Zero   RW         1091    .ARM.__AT_0x1000F000  malloc.o
+=======
+    0x1000f000   0x00000f00   Zero   RW         1047    .ARM.__AT_0x1000F000  malloc.o
+>>>>>>> parent of c985146... multiple_task
 =======
     0x1000f000   0x00000f00   Zero   RW         1047    .ARM.__AT_0x1000F000  malloc.o
 >>>>>>> parent of c985146... multiple_task
@@ -15929,7 +16038,11 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     0x68000000   0x000f0000   Zero   RW         1092    .ARM.__AT_0x68000000  malloc.o
+=======
+    0x68000000   0x000f0000   Zero   RW         1048    .ARM.__AT_0x68000000  malloc.o
+>>>>>>> parent of c985146... multiple_task
 =======
     0x68000000   0x000f0000   Zero   RW         1048    .ARM.__AT_0x68000000  malloc.o
 >>>>>>> parent of c985146... multiple_task
@@ -15943,7 +16056,11 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     0x680f0000   0x0000f000   Zero   RW         1093    .ARM.__AT_0x680F0000  malloc.o
+=======
+    0x680f0000   0x0000f000   Zero   RW         1049    .ARM.__AT_0x680F0000  malloc.o
+>>>>>>> parent of c985146... multiple_task
 =======
     0x680f0000   0x0000f000   Zero   RW         1049    .ARM.__AT_0x680F0000  malloc.o
 >>>>>>> parent of c985146... multiple_task
@@ -16101,6 +16218,9 @@ Image component sizes
        708         34          0          0         60       4631   piclib.o
       7520        282          0         16        704      24925   sdio_sdcard.o
        280          8          0          0          0       1049   spi.o
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
         36          8        392          0       2560        820   startup_stm32f40_41xxx.o
        924        106          0          0          0       6461   stm32f4xx_dma.o
@@ -16147,6 +16267,9 @@ Image component sizes
 
     ----------------------------------------------------------------------
     178792       6630      18900        840    1231404     931108   Object Totals
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
          0          0         32          0          0          0   (incl. Generated)
         16          4          8          5         13          0   (incl. Padding)
@@ -16212,6 +16335,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     117382       4128      15986        960    1190608     878207   Grand Totals
     117382       4128      15986        284    1190608     878207   ELF Image Totals (compressed)
     117382       4128      15986        284          0          0   ROM Totals
@@ -16222,6 +16346,8 @@ Image component sizes
     Total RW  Size (RW Data + ZI Data)           1191568 (1163.64kB)
     Total ROM Size (Code + RO Data + RW Data)     133652 ( 130.52kB)
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
     183996       6738      18964        844    1231404     919076   Grand Totals
     183996       6738      18964        272    1231404     919076   ELF Image Totals (compressed)
     183996       6738      18964        272          0          0   ROM Totals
@@ -16231,6 +16357,9 @@ Image component sizes
     Total RO  Size (Code + RO Data)               202960 ( 198.20kB)
     Total RW  Size (RW Data + ZI Data)           1232248 (1203.37kB)
     Total ROM Size (Code + RO Data + RW Data)     203232 ( 198.47kB)
+<<<<<<< HEAD
+>>>>>>> parent of c985146... multiple_task
+=======
 >>>>>>> parent of c985146... multiple_task
 
 ==============================================================================

@@ -511,6 +511,7 @@
       <bShared>0</bShared>
     </File>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <File>
       <GroupNumber>2</GroupNumber>
       <FileNumber>19</FileNumber>
@@ -537,6 +538,8 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+=======
+>>>>>>> parent of c985146... multiple_task
 =======
 >>>>>>> parent of c985146... multiple_task
   </Group>
@@ -590,8 +593,13 @@
 
   <Group>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <GroupName>STMCORE</GroupName>
     <tvExp>0</tvExp>
+=======
+    <GroupName>CORE</GroupName>
+    <tvExp>1</tvExp>
+>>>>>>> parent of c985146... multiple_task
 =======
     <GroupName>CORE</GroupName>
     <tvExp>1</tvExp>
@@ -977,10 +985,13 @@
     <RteFlg>0</RteFlg>
     <File>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <GroupNumber>12</GroupNumber>
       <FileNumber>48</FileNumber>
       <FileType>5</FileType>
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
       <GroupNumber>11</GroupNumber>
       <FileNumber>47</FileNumber>
       <FileType>1</FileType>
@@ -1026,7 +1037,11 @@
       <FileNumber>50</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>49</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>48</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1044,7 +1059,11 @@
       <FileNumber>51</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>50</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>49</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1062,7 +1081,11 @@
       <FileNumber>52</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>51</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>50</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1080,7 +1103,11 @@
       <FileNumber>53</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>52</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>51</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1098,7 +1125,11 @@
       <FileNumber>54</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>53</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>52</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1116,7 +1147,11 @@
       <FileNumber>55</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>54</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>53</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1134,7 +1169,11 @@
       <FileNumber>56</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>55</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>54</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1152,7 +1191,11 @@
       <FileNumber>57</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>56</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>55</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1170,7 +1213,11 @@
       <FileNumber>58</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>57</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>56</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1197,7 +1244,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>58</FileNumber>
+      <FileNumber>57</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1216,7 +1263,7 @@
       <FileType>2</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>59</FileNumber>
+      <FileNumber>58</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1234,7 +1281,11 @@
       <FileNumber>61</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>60</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>59</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1261,7 +1312,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>61</FileNumber>
+      <FileNumber>60</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1280,7 +1331,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>62</FileNumber>
+      <FileNumber>61</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1306,7 +1357,11 @@
       <FileNumber>64</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>63</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>62</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1324,7 +1379,11 @@
       <FileNumber>65</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>64</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>63</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1342,7 +1401,11 @@
       <FileNumber>66</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>65</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>64</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1360,7 +1423,11 @@
       <FileNumber>67</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>66</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>65</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1378,7 +1445,11 @@
       <FileNumber>68</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>67</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>66</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1396,7 +1467,11 @@
       <FileNumber>69</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>68</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>67</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1414,7 +1489,11 @@
       <FileNumber>70</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>69</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>68</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1432,7 +1511,11 @@
       <FileNumber>71</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>70</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>69</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1450,7 +1533,11 @@
       <FileNumber>72</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>71</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>70</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1477,7 +1564,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>72</FileNumber>
+      <FileNumber>71</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1496,7 +1583,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>73</FileNumber>
+      <FileNumber>72</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1515,7 +1602,7 @@
       <FileType>5</FileType>
 =======
       <GroupNumber>12</GroupNumber>
-      <FileNumber>74</FileNumber>
+      <FileNumber>73</FileNumber>
       <FileType>1</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
@@ -1541,7 +1628,11 @@
       <FileNumber>76</FileNumber>
 =======
       <GroupNumber>12</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>75</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>74</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1555,8 +1646,13 @@
     </File>
     <File>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>77</FileNumber>
+=======
+      <GroupNumber>12</GroupNumber>
+      <FileNumber>75</FileNumber>
+>>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
 =======
       <GroupNumber>13</GroupNumber>
@@ -1574,6 +1670,7 @@
     </File>
     <File>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>78</FileNumber>
 =======
@@ -1581,6 +1678,11 @@
       <FileNumber>77</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
+=======
+      <GroupNumber>13</GroupNumber>
+      <FileNumber>76</FileNumber>
+      <FileType>5</FileType>
+>>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1596,7 +1698,11 @@
       <FileNumber>79</FileNumber>
 =======
       <GroupNumber>14</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>78</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>77</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1614,7 +1720,11 @@
       <FileNumber>80</FileNumber>
 =======
       <GroupNumber>14</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>79</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>78</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1632,7 +1742,11 @@
       <FileNumber>81</FileNumber>
 =======
       <GroupNumber>14</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>80</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>79</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1646,11 +1760,16 @@
     </File>
     <File>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>82</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
       <FileNumber>81</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <GroupNumber>14</GroupNumber>
+      <FileNumber>80</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1668,7 +1787,11 @@
       <FileNumber>83</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>82</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>81</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1686,7 +1809,11 @@
       <FileNumber>84</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>83</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>82</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1704,7 +1831,11 @@
       <FileNumber>85</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>84</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>83</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1722,7 +1853,11 @@
       <FileNumber>86</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>85</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>84</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1740,7 +1875,11 @@
       <FileNumber>87</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>86</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>85</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1758,7 +1897,11 @@
       <FileNumber>88</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>87</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>86</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1776,7 +1919,11 @@
       <FileNumber>89</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>88</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>87</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1794,7 +1941,11 @@
       <FileNumber>90</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>89</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>88</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1812,7 +1963,11 @@
       <FileNumber>91</FileNumber>
 =======
       <GroupNumber>15</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>90</FileNumber>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>89</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -1826,8 +1981,13 @@
     </File>
     <File>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>92</FileNumber>
+=======
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>90</FileNumber>
+>>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
 =======
       <GroupNumber>16</GroupNumber>
@@ -1850,8 +2010,13 @@
       <FileType>1</FileType>
 =======
       <GroupNumber>16</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>92</FileNumber>
       <FileType>2</FileType>
+>>>>>>> parent of c985146... multiple_task
+=======
+      <FileNumber>91</FileNumber>
+      <FileType>5</FileType>
 >>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1868,9 +2033,14 @@
       <FileNumber>94</FileNumber>
 =======
       <GroupNumber>16</GroupNumber>
+<<<<<<< HEAD
       <FileNumber>93</FileNumber>
 >>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
+=======
+      <FileNumber>92</FileNumber>
+      <FileType>2</FileType>
+>>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1881,6 +2051,7 @@
       <bShared>0</bShared>
     </File>
     <File>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>95</FileNumber>
@@ -1903,6 +2074,10 @@
 <<<<<<< HEAD
       <GroupNumber>18</GroupNumber>
       <FileNumber>96</FileNumber>
+=======
+      <GroupNumber>16</GroupNumber>
+      <FileNumber>93</FileNumber>
+>>>>>>> parent of c985146... multiple_task
       <FileType>1</FileType>
 =======
       <GroupNumber>17</GroupNumber>
@@ -1954,9 +2129,15 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
+<<<<<<< HEAD
       <GroupNumber>19</GroupNumber>
       <FileNumber>99</FileNumber>
       <FileType>1</FileType>
+=======
+      <GroupNumber>17</GroupNumber>
+      <FileNumber>94</FileNumber>
+      <FileType>5</FileType>
+>>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1967,9 +2148,15 @@
       <bShared>0</bShared>
     </File>
     <File>
+<<<<<<< HEAD
       <GroupNumber>19</GroupNumber>
       <FileNumber>100</FileNumber>
       <FileType>1</FileType>
+=======
+      <GroupNumber>17</GroupNumber>
+      <FileNumber>95</FileNumber>
+      <FileType>5</FileType>
+>>>>>>> parent of c985146... multiple_task
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1994,6 +2181,7 @@
     </File>
   </Group>
 
+<<<<<<< HEAD
   <Group>
     <GroupName>Core</GroupName>
     <tvExp>0</tvExp>
@@ -9756,4 +9944,6 @@
 >>>>>>> parent of c985146... multiple_task
   </Group>
 
+=======
+>>>>>>> parent of c985146... multiple_task
 </ProjectOpt>

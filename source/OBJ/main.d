@@ -39,8 +39,11 @@
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 <<<<<<< HEAD
+<<<<<<< HEAD
 ..\obj\main.o: ..\HARDWARE\LCD\stm32lcd.h
 =======
+=======
+>>>>>>> parent of c985146... multiple_task
 ..\obj\main.o: ..\HARDWARE\LED\led.h
 ..\obj\main.o: ..\HARDWARE\LCD\lcd.h
 >>>>>>> parent of c985146... multiple_task
